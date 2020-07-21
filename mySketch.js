@@ -395,6 +395,18 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 
 function windowResized() {
   resizeCanvas(windowWidth, windowWidth*850/1920);
+  setupSoundWords();
+
+	//the master Quiz Play Button
+	eX = width / 8;
+	eY = height / 2;
+	playWidth = width / 5;
+	tsize = playWidth / 4;
+
+	//historygram = createGraphics(width/4,maxFreq-minFreq);
+	historygram = createGraphics(width / 2, height);
+		keyHeight = width / 1920 * 100;
+
 }
 
 
