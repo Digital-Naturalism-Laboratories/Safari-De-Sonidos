@@ -393,6 +393,10 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 }
 
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowWidth*850/1920);
+}
+
 
 function togglePlay() {
 	if (allSounds[0].isPlaying()) {
