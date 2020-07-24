@@ -8,7 +8,7 @@ var maxChangeForce = 20;
 var instructions = [];
 var insText = 'Cliiiiiiiiick :)';
 
-const fontFile = "JosefinSans-Bold.ttf";
+const fontFile = "fonts/Bogle-Black.otf";
 var soundcolor;
 
 function drawSoundsAsWords() {
