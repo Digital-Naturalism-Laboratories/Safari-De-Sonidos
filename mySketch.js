@@ -138,7 +138,7 @@ let enableNextRound = false;
 function setup() {
 		//let cnv = createCanvas(windowWidth, windowHeight);
 	//Lock the aspect ratio - 850 by 1920
-  let cnv = createCanvas(windowWidth, windowWidth*850/1920);
+  let cnv = createCanvas(windowWidth, windowWidth*1080/1920);
 	//cnv.mouseClicked(togglePlay);
 	let textString = 'Iniciar!';
 	bbox = font.textBounds(textString, width / 2, height - 80, 60);
@@ -211,9 +211,9 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 		image(titleButton, 0, 0, width, height);
 
 
-		drawSoundsAsWords();
+		//drawSoundsAsWords();
 
-		textSize(30*width/1920);
+		//textSize(30*width/1920);
 		//text("Sound Safari", width / 2, height / 2 - 40);
 		//if (mouseX > width / 2 - 40 && mouseY > height / 2 - 40 - 25 && mouseY < height / 2 + 40 + 25) { 
 		if (mouseX < width * .8 && mouseX > width * .2 && mouseY > height / 2 - 100 && mouseY < height / 2 + 300) { //make it bigger since we just want people to click
@@ -224,11 +224,11 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 
 	
 			textSize(50*width/1920);
-		ellipse(width / 2, height / 2 + 260*width/1920, 220*width/1920, 120*width/1920);
-	text("INICIAR", width / 2, height / 2 + 260*width/1920);
-		fill(100);
-		strokeWeight(1);
-		text("(antes de iniciar, enciende tu micrófono o reproduce música)", width / 2, height / 2 + 380*width/1920);
+	//	ellipse(width / 2, height / 2 + 260*width/1920, 220*width/1920, 120*width/1920);
+	//text("INICIAR", width / 2, height / 2 + 260*width/1920);
+	//	fill(100);
+	//	strokeWeight(1);
+	//	text("(antes de iniciar, enciende tu micrófono o reproduce música)", width / 2, height / 2 + 380*width/1920);
 
 
 	}
@@ -407,7 +407,7 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowWidth*850/1920);
+  resizeCanvas(windowWidth, windowWidth*1080/1920);
   setupSoundWords();
 
 	//the master Quiz Play Button
