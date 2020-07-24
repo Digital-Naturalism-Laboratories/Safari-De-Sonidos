@@ -129,7 +129,7 @@ function preload() {
 	//11
 	names.push("Grillo con alas de oro (Anaxipha exigua)");
 
-	pics.push(loadImage("Golden_Cricket_-_Flickr_-_treegrow_(3) Katja Schulz from Washington D USA.jpg"));
+	pics.push(loadImage("animals/Golden_Cricket_-_Flickr_-_treegrow_(3) Katja Schulz from Washington D USA.jpg"));
 	specs.push(loadImage("animals/cricket anaxipha.JPG"));
 	sounds.push(loadSound('animals/cricket anaxipha mp3.mp3'));
 	
