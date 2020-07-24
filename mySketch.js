@@ -138,7 +138,7 @@ let enableNextRound = false;
 function setup() {
 		//let cnv = createCanvas(windowWidth, windowHeight);
 	//Lock the aspect ratio - 850 by 1920
-  let cnv = createCanvas(windowWidth, windowWidth*1080/1920);
+  let cnv = createCanvas(width, width*1080/1920);
 	//cnv.mouseClicked(togglePlay);
 	let textString = 'Iniciar!';
 	bbox = font.textBounds(textString, width / 2, height - 80, 60);
@@ -407,7 +407,7 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowWidth*1080/1920);
+  resizeCanvas(width, width*1080/1920);
   setupSoundWords();
 
 	//the master Quiz Play Button
