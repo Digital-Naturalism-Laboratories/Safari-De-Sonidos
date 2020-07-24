@@ -1,5 +1,10 @@
 //Preload all files
 function preload() {
+
+	//load UI images
+
+	titleImg = loadImage('UIimg/Titulo-1920x1080.png');
+	titleButton = loadImage("UIimg/start-buttonTitulo-1920x1080.png");
 	
 		font = loadFont(fontFile);
 

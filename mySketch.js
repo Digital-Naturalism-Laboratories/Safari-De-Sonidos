@@ -36,7 +36,16 @@ http://github.com/vamoss
 ******************/
 
 
+/*
+UI images
+*/
 
+let titleImg;
+let titleButton;
+
+let infoImg=[]
+
+let infoFrog;
 
 
 //const micSampleRate = 44100;
@@ -197,6 +206,10 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 			spectrum = fft.analyze();
 	}
 	if (state == STATES.STARTSCREEN) {
+
+		image(titleImg, 0, 0, width, height);
+		image(titleButton, 0, 0, width, height);
+
 
 		drawSoundsAsWords();
 
