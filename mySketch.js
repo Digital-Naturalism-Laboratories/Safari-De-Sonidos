@@ -216,8 +216,8 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 		//text("Sound Safari", width / 2, height / 2 - 40);
 		//if (mouseX > width / 2 - 40 && mouseY > height / 2 - 40 - 25 && mouseY < height / 2 + 40 + 25) { 
 		if (mouseX < width * .8 && mouseX > width * .2 && mouseY > height / 2 - 100 && mouseY < height / 2 + 300) { //make it bigger since we just want people to click
-			fill(155, 150);
-			//tint(200, 255, 0); //
+			//fill(155, 150);
+			tint(200, 255, 0); //
 
 		} else {
 			noTint();
