@@ -17,7 +17,7 @@ function drawIntro() {
 
 	textAlign(CENTER, TOP);
 	if (frogclicked) {
-		image(infoImg[0], 0, 0, width, height);
+		image(infoImg[1], 0, 0, width, height);
 
 		/*text("Los espectrogramas muestran los sonidos como una imagen. \n \n" +
 			"Los sonidos de ALTA frecuencia se muestran en la parte superior. ↑\n" +
