@@ -37,7 +37,7 @@ function drawIntro() {
 		fill(100, 200, 255, 150);
 
 		//	rect(width/2-rectwidth,height-60-rectheight, rectwidth,rectheight,rectCorners);
-		//let textString = '¡Juega YA!';
+		let textString = '¡Juega YA!';
 		bbox = font.textBounds(textString, width / 2, height - 80*width/1920, 60*width/1920);
 
 		stroke(250, 200, 200, 200);

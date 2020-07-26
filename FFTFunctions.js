@@ -13,22 +13,22 @@
 				fill(255, 255, 0, 150);
 		
 		beginShape();
-				vertex(width * 3 / 4, height);
+		curveVertex(width * 3 / 4, height);
 		for (let i = minFreq; i < maxFreq; i += 8*parseInt(freqstep)) { //make our computations easier by skipping!
 						let index = i - minFreq;
 
 			let x = (1 - spectrum[index] / 255) * width * 1 / 4;
 			let y = (i - minFreq) / (maxFreq - minFreq - 1) * height;
-			vertex(width - x, height - y);
+			curveVertex(width - x, height - y);
 		}
-		vertex(width * 3 / 4, 0);
+		curveVertex(width * 3 / 4, 0);
 		
 		textAlign(RIGHT);
 					textSize(30*width/1920);
 	//	noStroke();
 
-		text("ALTA Frecuencia \n(5,000Hz)", width-20, 40);
-				 		text("BAJA Frecuencia\n(100Hz)", width-20, height-80);
+		//text("ALTA Frecuencia \n(5,000Hz)", width-20, 40);
+		//		 		text("BAJA Frecuencia\n(100Hz)", width-20, height-80);
 
 				 textAlign(CENTER);
 
@@ -53,7 +53,7 @@
 
 */
 
-		//DRAW HISTORYGRAM 0
+		//DRAW HISTOGRAM 0
 		let hOffset = 6;
 		historygram.image(historygram, -hOffset, 0);
 		for (let i = minFreq; i < maxFreq; i += 1*parseInt(freqstep)) { //make our computations easier by skipping!
