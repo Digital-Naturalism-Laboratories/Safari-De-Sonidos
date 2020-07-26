@@ -45,7 +45,9 @@ let titleButton;
 
 let infoImg=[]
 
-let infoFrog;
+
+
+
 
 
 //const micSampleRate = 44100;
@@ -238,6 +240,16 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 
 	}
 
+	//INTRODUCTION
+	if (state == STATES.INTRO) {
+
+
+		drawIntro();
+
+
+
+	}
+	/////// END INTRO STATE
 
 	// The Quiz Game!
 	if (state == STATES.QUIZ) {
@@ -308,16 +320,7 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 	}
 
 
-	//INTRODUCTION
-	if (state == STATES.INTRO) {
 
-
-		drawIntro();
-
-
-
-	}
-	/////// END INTRO STATE
 
 
 	if (state == STATES.RECORDING) {
