@@ -1,7 +1,6 @@
 var bbox;
 
 function drawIntro() {
-	drawSpectra();
 	noStroke();
 
 	textSize(30*width/1920);
@@ -9,7 +8,9 @@ function drawIntro() {
 
 	textSize(20*width/1920);
 	//ellipse(width / 2, height / 2+40, 80,50);
+	image(infoBlue, 0, 0, width, height);
 
+	drawSpectra();
 
 	
 	noStroke();
