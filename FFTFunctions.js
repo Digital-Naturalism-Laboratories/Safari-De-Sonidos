@@ -83,7 +83,7 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 		}
 		//fill(255);
 		fill(0);
-		image(historygram, 0, 0, width * 3 / 4, height);
+		image(historygram, 0, 0, width * positionLevels, height);
 
 	}
 	//End Draw Spectra Function
