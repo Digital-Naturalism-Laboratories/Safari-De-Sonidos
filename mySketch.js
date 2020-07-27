@@ -66,7 +66,7 @@ const maxFreqHz = 14000; //C7
 //const minFreq = Math.floor(minFreqHz / 2 / 1.445); //2/1.445 is a magic number to convert Hz to MIC frequency, dont know why...
 //const maxFreq = Math.floor(maxFreqHz / 2 / 1.445); //2/1.445 is a magic number to convert Hz to MIC frequency, dont know why...
 minFreq = 150;
-maxFreq = 1000;
+maxFreq = 2000;
 
 //Andy update, the default number of frequency bins is 1024 , so maybe something with that?
 const magconvertNumber = 2 / 1.445;
