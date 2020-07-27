@@ -232,14 +232,15 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 		//if (mouseX > width / 2 - 40 && mouseY > height / 2 - 40 - 25 && mouseY < height / 2 + 40 + 25) { 
 		if (mouseX < width * .8 && mouseX > width * .2 && mouseY > height / 2 - 100 && mouseY < height / 2 + 300) { //make it bigger since we just want people to click
 			//fill(155, 150);
-			//startButt.tint(200, 255, 0); //
+			startButt.tint(200, 255, 0); //
 
 		} else {
-		//	startButt.noTint();
+			startButt.noTint();
 			//fill(255, 150);
 		}
 
 		startButt.image(titleButton, 0, 0, width, height);
+		image(startButt,0,0,width,height);
 		noTint();
 
 	
