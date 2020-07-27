@@ -2,6 +2,8 @@ let infoFrog;
 
 let infoBlue;
 
+let infojuegaYabutton;
+
 //Preload all files
 function preload() {
 
@@ -20,6 +22,8 @@ function preload() {
 	infoFrog = loadImage("UIimg/frog_button_Espectrograma-1920x1080.png");
 
 	infoBlue = loadImage("UIimg/blue-zone-50per-Espectrograma-1920x1080.png");
+
+infojuegaYabutton = loadImage("UIimg/juega-ya-button-Espectrograma-1920x1080_info2.png");
 
 	//tunfrogimg = loadImage("animals/tunfrog.png");
 

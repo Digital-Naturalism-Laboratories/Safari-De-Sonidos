@@ -107,7 +107,7 @@
 
 		let tunwidth=300*width/1920;
 	let tunheight=170*width/1920;
-	if (mouseX > width / 2 - tunwidth/2 && mouseY > height / 2 - tunheight/2 && mouseX < width / 2 - tunwidth/2 +tunwidth && mouseY < height / 2 - tunheight/2+tunwidth) {
+	if (mouseX > width / 4 && mouseY > height / 2 && mouseX < width / 2 && mouseY < height / 2 - tunheight/2+tunwidth) {
 
 				sound.play();
 					frogclicked=true;

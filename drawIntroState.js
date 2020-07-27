@@ -45,12 +45,18 @@ function drawIntro() {
 		strokeWeight(3);
 		colorMode(HSB);
 		soundcolor = color(fft.getEnergy(100, 3000), 30 + fft.getEnergy(100, 3000), 200, .5);
-		if (mouseX > bbox.x - 20 && mouseY > bbox.y && mouseX < bbox.x - 20 + bbox.w + 30 && mouseY < bbox.y + bbox.h + 20) {
+		
+		//Juega Ya Button
+		if (mouseX > bbox.x - 20 && mouseY > height*5/6 && mouseX < bbox.x - 20 + bbox.w + 30 && mouseY < height*7/8) {
 			fill(100, 100);
 			strokeWeight(8);
 		} else {
 			fill(soundcolor);
 		}
+		tint(0,240, 0,100); // Tint blue and set transparency
+	//	image(tunfrogimg, width / 2 - tunwidth/2, height / 2 - tunheight/2, tunwidth, tunheight);
+	image(infojuegaYabutton, 0, 0, width, height);
+		
 		//rect(bbox.x - 20, bbox.y, bbox.w + 30, bbox.h + 20, rectCorners);
 		//	fill(100,200,255,150);
 		//							soundcolor = color( fft.getEnergy(100, 3000), 30 + fft.getEnergy(100, 3000), 200,.5);
@@ -86,7 +92,7 @@ let tunwidth=300*width/1920;
 	//image(tunfrogimg, width / 2 - tunwidth/2, height / 2 - tunheight/2, tunwidth, tunheight);
 	image(infoFrog, 0, 0, width, height);
 
-	if (mouseX > width / 2 - tunwidth/2 && mouseY > height / 2 - tunheight/2 && mouseX < width / 2 - tunwidth/2 +tunwidth && mouseY < height / 2 - tunheight/2+tunwidth) {
+	if (mouseX > width / 4 && mouseY > height / 2 && mouseX < width / 2 && mouseY < height / 2 - tunheight/2+tunwidth) {
 		push();
 		tint(0,240, 0,100); // Tint blue and set transparency
 	//	image(tunfrogimg, width / 2 - tunwidth/2, height / 2 - tunheight/2, tunwidth, tunheight);
