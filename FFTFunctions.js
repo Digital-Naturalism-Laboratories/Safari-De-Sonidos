@@ -4,15 +4,59 @@
 
 let positionLevels= 1525/1920; // Relative position of the bars level
 
+
+
+
 		//Show Live Spectrogram Below
 	//	var freqstep = spectrum.length / height;
 		var freqstep= (maxFreq-minFreq-1)/height;
 		//print(spectrum.length);
 
+				//DRAW HISTOGRAM 0
+				let hOffset = 6;
+				historygram.image(historygram, -hOffset, 0);
+				for (let i = minFreq; i < maxFreq; i += 1*parseInt(freqstep)) { //make our computations easier by skipping!
+					
+		
+					colorMode(HSB);
+						//make background color of histogram
+			historygram.stroke(189,63,88);
+		
+			historygram.rect(historygram.width - hOffset, 0, historygram.width, height);
+		
+		
+					
+					let index = i - minFreq;
+					//	let index= i;//(i - minFreq) / (maxFreq - minFreq - 1) * height;
+					let intensity = (spectrum[index] - averageSpectrum[index]);
+					//var hue = intensity;
+					var hue = 240 - map(intensity, 0, 255, 0, 360);
+					historygram.stroke(hue, intensity, 255 - intensity, intensity/360);
+					//fill(hue,255,255);
+		
+					//		historygram.stroke(255-intensity,255-intensity/2,intensity);
+					//historygram.fill(255-intensity,255-intensity/2,intensity,intensity);	
+					let y = index / parseInt(freqstep);
+		
+					//Kid Mode
+					//	historygram.circle(historygram.width-1,height- y, intensity/10);
+					//historygram.strokeWeight(4);
+					
+					//High Resolution Mode
+					//historygram.point(historygram.width-hOffset,height- y);
+					historygram.line(historygram.width - hOffset, height - y, historygram.width, height - y);
+					
+				}
+				//fill(255);
+				fill(0);
+				image(historygram, 0, 0, width * positionLevels, height);
+
 		//DRAW MIC SPECTRUM
+		colorMode(RGB);
 				stroke(0);
 		strokeWeight(3*width/1920);
 				fill(255, 255, 0, 150);
+
 		
 		beginShape();
 		curveVertex(width * positionLevels, height);
@@ -55,44 +99,7 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 
 */
 
-		//DRAW HISTOGRAM 0
-		let hOffset = 6;
-		historygram.image(historygram, -hOffset, 0);
-		for (let i = minFreq; i < maxFreq; i += 1*parseInt(freqstep)) { //make our computations easier by skipping!
-			
 
-			colorMode(HSB);
-				//make background color of histogram
-	historygram.fill(189,63,88);
-
-	historygram.rect(historygram.width - hOffset, 0, historygram.width, height);
-
-
-			
-			let index = i - minFreq;
-			//	let index= i;//(i - minFreq) / (maxFreq - minFreq - 1) * height;
-			let intensity = (spectrum[index] - averageSpectrum[index]);
-			//var hue = intensity;
-			var hue = 240 - map(intensity, 0, 255, 0, 360);
-			historygram.stroke(hue, intensity, 255 - intensity, intensity/360);
-			//fill(hue,255,255);
-
-			//		historygram.stroke(255-intensity,255-intensity/2,intensity);
-			//historygram.fill(255-intensity,255-intensity/2,intensity,intensity);	
-			let y = index / parseInt(freqstep);
-
-			//Kid Mode
-			//	historygram.circle(historygram.width-1,height- y, intensity/10);
-			//historygram.strokeWeight(4);
-			
-			//High Resolution Mode
-			//historygram.point(historygram.width-hOffset,height- y);
-			historygram.line(historygram.width - hOffset, height - y, historygram.width, height - y);
-			
-		}
-		//fill(255);
-		fill(0);
-		image(historygram, 0, 0, width * positionLevels, height);
 
 	}
 	//End Draw Spectra Function
