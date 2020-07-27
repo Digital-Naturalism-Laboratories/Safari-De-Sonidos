@@ -113,7 +113,7 @@
 					frogclicked=true;
 			}
 			//Juega Ya Button
-			if (mouseX > bbox.x - 20 && mouseY > height*5/6 && mouseX < bbox.x - 20 + bbox.w + 30 && mouseY < height*7/8) {
+			if (mouseX > width/3 && mouseY > height*5/6 && mouseX < width/2 && mouseY < height*15/16) {
 				setState(STATES.QUIZ);
 sound.stop();
 		}

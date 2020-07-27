@@ -47,7 +47,7 @@ function drawIntro() {
 		soundcolor = color(fft.getEnergy(100, 3000), 30 + fft.getEnergy(100, 3000), 200, .5);
 		
 		//Juega Ya Button
-		if (mouseX > width/3 && mouseY > height*5/6 && mouseX < width/20 && mouseY < height*15/16) {
+		if (mouseX > width/3 && mouseY > height*5/6 && mouseX < width/2 && mouseY < height*15/16) {
 		//	fill(100, 100);
 		//	strokeWeight(8);
 			push();
@@ -94,17 +94,17 @@ let tunwidth=300*width/1920;
 	}
 	
 	//image(tunfrogimg, width / 2 - tunwidth/2, height / 2 - tunheight/2, tunwidth, tunheight);
-	image(infoFrog, 0, 0, width, height);
 
 	if (mouseX > width / 4 && mouseY > height / 2 && mouseX < width / 2 && mouseY < height / 2 - tunheight/2+tunwidth) {
-		push();
 		tint(0,240, 0,100); // Tint blue and set transparency
 	//	image(tunfrogimg, width / 2 - tunwidth/2, height / 2 - tunheight/2, tunwidth, tunheight);
+	//image(infoFrog, 0, 0, width, height);
+
+	}
+	else{noTint(); }
 	image(infoFrog, 0, 0, width, height);
 
-	pop();
-	}
-			textSize(30*width/1920);
+	//		textSize(30*width/1920);
 
 	if (!frogclicked) {
 		//text(			"¡Haz clic en la rana Túngara para comenzar!", width/2, height/2+tunheight);
