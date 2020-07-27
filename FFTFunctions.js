@@ -20,8 +20,8 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 		
 					colorMode(HSB);
 						//make background color of histogram
-			historygram.stroke(189,63,88);
-		
+			historygram.fill(189,63,88);
+		historrgram.noStroke();
 			historygram.rect(historygram.width - hOffset, 0, historygram.width, height);
 		
 		
