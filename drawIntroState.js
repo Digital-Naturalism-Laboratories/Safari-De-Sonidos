@@ -89,7 +89,7 @@ let tunwidth=300*width/1920;
 	if(sound.isPlaying()){
 		push();
 		translate(width/2, height/2);
-		drawSpectrumCircleFrog();
+	//	drawSpectrumCircleFrog();
 		pop();
 	}
 	
@@ -103,7 +103,7 @@ let tunwidth=300*width/1920;
 	}
 	else{noTint(); }
 	image(infoFrog, 0, 0, width, height);
-
+	noTint();
 	//		textSize(30*width/1920);
 
 	if (!frogclicked) {
