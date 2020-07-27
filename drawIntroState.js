@@ -48,23 +48,26 @@ function drawIntro() {
 		
 		//Juega Ya Button
 		if (mouseX > bbox.x - 20 && mouseY > height*5/6 && mouseX < bbox.x - 20 + bbox.w + 30 && mouseY < height*7/8) {
-			fill(100, 100);
-			strokeWeight(8);
+		//	fill(100, 100);
+		//	strokeWeight(8);
+			push();
+			tint(0,240, 0,100); // Tint blue and set transparency
 		} else {
-			fill(soundcolor);
+			//fill(soundcolor);
+			
 		}
-		tint(0,240, 0,100); // Tint blue and set transparency
+	
 	//	image(tunfrogimg, width / 2 - tunwidth/2, height / 2 - tunheight/2, tunwidth, tunheight);
 	image(infojuegaYabutton, 0, 0, width, height);
-		
+		pop();
 		//rect(bbox.x - 20, bbox.y, bbox.w + 30, bbox.h + 20, rectCorners);
 		//	fill(100,200,255,150);
 		//							soundcolor = color( fft.getEnergy(100, 3000), 30 + fft.getEnergy(100, 3000), 200,.5);
 
-		fill(0, 0, 0, .7);
+		//fill(0, 0, 0, .7);
 
-		textSize(60*width/1920);
-		strokeWeight(1);
+		//textSize(60*width/1920);
+		//strokeWeight(1);
 
 		//text(textString, width / 2, height - 80*width/1920);
 

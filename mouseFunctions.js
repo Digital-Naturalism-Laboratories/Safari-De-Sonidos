@@ -112,8 +112,9 @@
 				sound.play();
 					frogclicked=true;
 			}
-		if(mouseX>bbox.x-20&&mouseY>bbox.y&&mouseX<bbox.x-20+bbox.w+30&&mouseY<bbox.y+bbox.h+20){
-						setState(STATES.QUIZ);
+			//Juega Ya Button
+			if (mouseX > bbox.x - 20 && mouseY > height*5/6 && mouseX < bbox.x - 20 + bbox.w + 30 && mouseY < height*7/8) {
+				setState(STATES.QUIZ);
 sound.stop();
 		}
 
