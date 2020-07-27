@@ -60,17 +60,15 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 		historygram.image(historygram, -hOffset, 0);
 		for (let i = minFreq; i < maxFreq; i += 1*parseInt(freqstep)) { //make our computations easier by skipping!
 			
-		
-			
-			let index = i - minFreq;
-			let y = index / parseInt(freqstep);
-
-	//make background color of histogram
+			//make background color of histogram
+			//make background color of histogram
 	historygram.fill(189,63,88);
 
 	historygram.rect(historygram.width - hOffset, 0, historygram.width, height);
 
 
+			
+			let index = i - minFreq;
 			//	let index= i;//(i - minFreq) / (maxFreq - minFreq - 1) * height;
 			let intensity = (spectrum[index] - averageSpectrum[index]);
 			//var hue = intensity;
@@ -80,7 +78,7 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 
 			//		historygram.stroke(255-intensity,255-intensity/2,intensity);
 			//historygram.fill(255-intensity,255-intensity/2,intensity,intensity);	
-			
+			let y = index / parseInt(freqstep);
 
 			//Kid Mode
 			//	historygram.circle(historygram.width-1,height- y, intensity/10);
