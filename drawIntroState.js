@@ -47,10 +47,11 @@ function drawIntro() {
 		soundcolor = color(fft.getEnergy(100, 3000), 30 + fft.getEnergy(100, 3000), 200, .5);
 		
 		//Juega Ya Button
-		if (mouseX > bbox.x - 20 && mouseY > height*5/6 && mouseX < bbox.x - 20 + bbox.w + 30 && mouseY < height*7/8) {
+		if (mouseX > width/3 && mouseY > height*5/6 && mouseX < width/20 && mouseY < height*15/16) {
 		//	fill(100, 100);
 		//	strokeWeight(8);
 			push();
+			colorMode(RGB);
 			tint(0,240, 0,100); // Tint blue and set transparency
 		} else {
 			//fill(soundcolor);
