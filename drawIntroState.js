@@ -96,13 +96,15 @@ let tunwidth=300*width/1920;
 	//image(tunfrogimg, width / 2 - tunwidth/2, height / 2 - tunheight/2, tunwidth, tunheight);
 
 	if (mouseX > width / 4 && mouseY > height / 2 && mouseX < width / 2 && mouseY < height / 2 - tunheight/2+tunwidth) {
-		tint(0,240, 0,100); // Tint blue and set transparency
+		frogButt.tint(0,240, 0,100); // Tint blue and set transparency
 	//	image(tunfrogimg, width / 2 - tunwidth/2, height / 2 - tunheight/2, tunwidth, tunheight);
 	//image(infoFrog, 0, 0, width, height);
 
 	}
-	else{noTint(); }
-	image(infoFrog, 0, 0, width, height);
+	else{frogButt.noTint(); }
+	frogButt.image(infoFrog, 0, 0, width, height);
+	image(frogButt,0,0,width,height);
+
 	noTint();
 	//		textSize(30*width/1920);
 
