@@ -60,6 +60,8 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 		historygram.image(historygram, -hOffset, 0);
 		for (let i = minFreq; i < maxFreq; i += 1*parseInt(freqstep)) { //make our computations easier by skipping!
 			
+
+			colorMode(HSB);
 				//make background color of histogram
 	historygram.fill(189,63,88);
 
