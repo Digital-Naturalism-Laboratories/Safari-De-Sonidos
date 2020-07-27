@@ -2,6 +2,8 @@
 	function drawSpectra() {
 
 
+let positionLevels= 1525/1920; // Relative position of the bars level
+
 		//Show Live Spectrogram Below
 	//	var freqstep = spectrum.length / height;
 		var freqstep= (maxFreq-minFreq-1)/height;
@@ -13,15 +15,15 @@
 				fill(255, 255, 0, 150);
 		
 		beginShape();
-		curveVertex(width * 3 / 4, height);
+		curveVertex(width * positionLevels, height);
 		for (let i = minFreq; i < maxFreq; i += 8*parseInt(freqstep)) { //make our computations easier by skipping!
 						let index = i - minFreq;
 
-			let x = (1 - spectrum[index] / 255) * width * 1 / 4;
+			let x = (1 - spectrum[index] / 255) * width * (1-positionLevels);
 			let y = (i - minFreq) / (maxFreq - minFreq - 1) * height;
 			curveVertex(width - x, height - y);
 		}
-		curveVertex(width * 3 / 4, 0);
+		curveVertex(width * positionLevels, 0);
 		
 		textAlign(RIGHT);
 					textSize(30*width/1920);
