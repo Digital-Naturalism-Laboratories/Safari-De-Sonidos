@@ -14,7 +14,7 @@ for (let i = minFreq; i < maxFreq; i += 8*parseInt(freqstep)) { //make our compu
 
 	let y = (1 - spectrum[index] / 255) * width * (1-1080/1920);
 	let x = (i - minFreq) / (maxFreq - minFreq - 1) * height;
-	curveVertex(width - x, height - y);
+	curveVertex( x, y);
 }
 curveVertex(width * 2/3, height*5/8);
 
