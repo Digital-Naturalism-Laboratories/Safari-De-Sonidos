@@ -5,7 +5,7 @@ function drawEqualizer(){
 		//stroke(0);
 		//strokeWeight(3*width/1920);
 		noStroke();
-		fill(255, 255, 0, 150);
+		fill(234, 150, 0);
 
 
 beginShape();
