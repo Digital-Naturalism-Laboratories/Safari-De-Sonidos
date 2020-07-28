@@ -15,9 +15,9 @@ function drawScore(index) {
 
 	// 		//display score
 	let scoredotsize = width / 4 / quizRounds - 5 * width / 1920;
-	// 		let score = 0;
-	// 		scoresize = 20 * width / 1920
-	// 		textSize(scoresize*2);
+	 		let score = 0;
+	 		scoresize = 20 * width / 1920
+	 		textSize(scoresize*2);
 	for (let i = 0; i < quizRounds; i++) {
 
 		push();
