@@ -4,6 +4,8 @@ let infoBlue;
 
 let juegaYabutton;
 
+let playSoundButt;
+
 //Preload all files
 function preload() {
 

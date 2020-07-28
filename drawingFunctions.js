@@ -142,6 +142,7 @@ labelsize = 40 * width / 1920;
 
 	function drawPlayButton() {
 
+		
 		//Draw master Quiz Play Button
 		eX = width / 8;
 		eY = height / 2;
@@ -155,6 +156,7 @@ labelsize = 40 * width / 1920;
 
 
 		translate(eX, eY);
+		
 		//Change Button Color on mouseover
 		if (dist(mouseX, mouseY, eX, eY) < playWidth / 2 || secretSound.isPlaying()) {
 
@@ -170,12 +172,12 @@ labelsize = 40 * width / 1920;
 		}
 		//print(secretSound.currentTime());
 
-		textSize(scoresize*2);
+		//textSize(scoresize*2);
 
-		ellipse(0, 0, playWidth, playWidth);
-		strokeWeight(2 * width / 1920);
-		text("Haz clic para averiguar \n el Sonido Misterioso", 0, playWidth / 2 + 60*width/1920);
-		textSize(20 * width / 1920);
+		//ellipse(0, 0, playWidth, playWidth);
+		//strokeWeight(2 * width / 1920);
+		//text("Haz clic para averiguar \n el Sonido Misterioso", 0, playWidth / 2 + 60*width/1920);
+		//textSize(20 * width / 1920);
 
 
 
@@ -186,8 +188,11 @@ labelsize = 40 * width / 1920;
 				fill(0, 255, 255, .9);
 
 				strokeWeight(8 * width / 1920);
+image(playsoundButtTint,0,0,width,height);
+
 			} else {
 				fill(0, 255, 255, .4);
+				image(playSoundButt,0,0,width,height);
 
 				strokeWeight(3 * width / 1920);
 			}
@@ -211,6 +216,8 @@ labelsize = 40 * width / 1920;
 
 			}
 		}
+
+/*
 			//Draw Triangle
 		translate(20* width / 1920, 0);
 		strokeWeight(3 * width / 1920);
@@ -219,6 +226,8 @@ labelsize = 40 * width / 1920;
 		triangle(-tsize, -tsize, -tsize, tsize, tsize, 0);
 		//textSize(100*width/1920);
 		textSize(30 * width / 1920);
+*/
+
 		pop();
 
 	}

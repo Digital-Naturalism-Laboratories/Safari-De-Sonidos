@@ -135,7 +135,9 @@ let padding = 4; // 4 pixels of padding
 
 let enableNextRound = false;
 
-let startButttint, jeugayaButtTint, frogButtTint, playsoundButt;
+let startButttint, jeugayaButtTint, frogButtTint, playsoundButtTint;
+
+
 
 function setup() {
 		//let cnv = createCanvas(windowWidth, windowHeight);
@@ -162,19 +164,19 @@ function setup() {
 	startButttint = createGraphics(width,height);
 	jeugayaButtTint = createGraphics(width,height);
 	frogButtTint  = createGraphics(width,height);
-	playsoundButt = createGraphics(width,height);
+	playsoundButtTint = createGraphics(width,height);
 	
 	startButttint.tint(200, 255, 0); //
 	jeugayaButtTint.tint(200, 255, 0);
 	frogButtTint.tint(200, 255, 0);
-	playsoundButt.tint(200, 255, 0);
+	playsoundButtTint.tint(200, 255, 0);
 	
 	
 		startButttint.image(startButton,0,0,width,height);
 	frogButtTint.image(frogButt, 0, 0, width, height);
 	jeugayaButtTint.image(juegaYabutton,0,0,width,height);
 
-//playsoundButt.image
+	playsoundButtTint.image(playSoundButt,0,0,width,height);
 
 
 
