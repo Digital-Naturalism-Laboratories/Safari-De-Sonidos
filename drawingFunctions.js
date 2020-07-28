@@ -14,7 +14,7 @@ image(roundsDots,0,0,width,height);
 // 		stroke(soundcolor);
 
 // 		//display score
-// 		let scoredotsize = width / 4 / quizRounds - 5* width / 1920;
+ 		let scoredotsize = width / 4 / quizRounds - 5* width / 1920;
 // 		let score = 0;
 // 		scoresize = 20 * width / 1920
 // 		textSize(scoresize*2);
