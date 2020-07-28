@@ -414,7 +414,9 @@ function windowResized() {
 	tsize = playWidth / 4;
 
 	//historygram = createGraphics(width/4,maxFreq-minFreq);
-	historygram =  createGraphics(int(width / 2), int(height));
+	//historygram =  createGraphics(int(width / 2), int(height));
+
+	historygram.size(int(width / 2), int(height));
 	//historygram.width=int(width/2);
 	//historygram.height=int(width/1920*1080);
 	
