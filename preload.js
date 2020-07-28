@@ -1,8 +1,8 @@
-let infoFrog;
+let frogButtTint;
 
 let infoBlue;
 
-let infojuegaYabutton;
+let juegaYabutton;
 
 //Preload all files
 function preload() {
@@ -10,7 +10,7 @@ function preload() {
 	//load UI images
 
 	titleImg = loadImage('UIimg/Titulo-1920x1080.png');
-	titleButton = loadImage("UIimg/start-buttonTitulo-1920x1080.png");
+	startButton = loadImage("UIimg/start-buttonTitulo-1920x1080.png");
 
 	font = loadFont(fontFile);
 
@@ -19,13 +19,20 @@ function preload() {
 	infoImg.push(loadImage("UIimg/Espectrograma-1920x1080_info2.png"));
 
 
-	infoFrog = loadImage("UIimg/frog_button_Espectrograma-1920x1080.png");
+	frogButtTint = loadImage("UIimg/frog_button_Espectrograma-1920x1080.png");
 
 	infoBlue = loadImage("UIimg/blue-zone-50per-Espectrograma-1920x1080.png");
 
-infojuegaYabutton = loadImage("UIimg/juega-ya-button-Espectrograma-1920x1080_info2.png");
+juegaYabutton = loadImage("UIimg/juega-ya-button-Espectrograma-1920x1080_info2.png");
 
 	//tunfrogimg = loadImage("animals/tunfrog.png");
+
+
+	startButttint.image(startButton,0,0,width,height);
+frogButtTint.image(frogButtTint, 0, 0, width, height);
+jeugayaButtTint.image(juegaYabutton,0,0,width,height);
+
+//Load Sounds
 
 
 	sound = loadSound('animals/tungara_diep-water.wav');
