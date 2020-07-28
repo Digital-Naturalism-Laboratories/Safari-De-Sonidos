@@ -2,14 +2,15 @@
 function drawEqualizer(){
 		var freqstep= (maxFreq-minFreq-1)/height;
 		colorMode(RGB);
-		stroke(0);
-		strokeWeight(3*width/1920);
+		//stroke(0);
+		//strokeWeight(3*width/1920);
+		noStroke();
 		fill(255, 255, 0, 150);
 
 
 beginShape();
 //curveVertex(width * 1/3, height*2/3);
-for (let i = minFreq; i < maxFreq; i += 8*parseInt(freqstep)) { //make our computations easier by skipping!
+for (let i = minFreq; i < maxFreq; i += 64*parseInt(freqstep)) { //make our computations easier by skipping!
 				let index = i - minFreq;
 
 	let y = (1 - spectrum[index] / 255) * height*2/3;
