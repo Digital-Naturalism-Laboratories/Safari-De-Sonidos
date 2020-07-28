@@ -75,7 +75,7 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 					let intensity = (spectrum[index] - averageSpectrum[index]);
 					//var hue = intensity;
 					var hue = 240 - map(intensity, 0, 255, 0, 360);
-					historygram.stroke(hue, intensity, 255 - intensity, intensity/255*2);
+					historygram.stroke(hue, intensity, 255 - intensity, intensity/255*3);
 					//fill(hue,255,255);
 		
 					//		historygram.stroke(255-intensity,255-intensity/2,intensity);
