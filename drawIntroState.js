@@ -51,15 +51,13 @@ function drawIntro() {
 		//	fill(100, 100);
 		//	strokeWeight(8);
 		
-			colorMode(RGB);
-			tint(0,240, 0,100); // Tint blue and set transparency
+			//colorMode(RGB);
+			//tint(0,240, 0,100); // Tint blue and set transparency
 			image(jeugayaButtTint, 0, 0, width, height);
 
 		} else {
 			//fill(soundcolor);
 			image(juegaYabutton, 0, 0, width, height);
-
-			
 		}
 	
 	//	image(tunfrogimg, width / 2 - tunwidth/2, height / 2 - tunheight/2, tunwidth, tunheight);
@@ -90,10 +88,10 @@ let tunwidth=300*width/1920;
 	let tunheight=170*width/1920;
 	
 	if(sound.isPlaying()){
-		push();
-		translate(width/2, height/2);
+	//	push();
+	//	translate(width/2, height/2);
 	//	drawSpectrumCircleFrog();
-		pop();
+	//	pop();
 	}
 	
 	//image(tunfrogimg, width / 2 - tunwidth/2, height / 2 - tunheight/2, tunwidth, tunheight);
