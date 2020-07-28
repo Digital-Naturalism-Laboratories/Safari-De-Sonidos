@@ -33,20 +33,16 @@ image(roundsDots,0,0,width,height);
 
 			}
 
-			ellipse((i + 1) * scoredotsize - scoredotsize / 4, scoredotsize*1.1 , scoredotsize, scoredotsize);
+			//ellipse((i + 1) * scoredotsize - scoredotsize / 4, scoredotsize*1.1 , scoredotsize, scoredotsize);
 
 			pop();
 
-
-
-
-
 		}
 		
-						text("RONDA: " + (currentRound + 1), width / 8, scoresize*1.1);
+						text("RONDA: " + (currentRound + 1), width / 8, height/3);
 		textSize(scoresize*3);
 
-		text("Puntuación: " + score, width / 8, 2*scoredotsize);
+		//text("Puntuación: " + score, width / 8, 2*scoredotsize);
 		
 		colorMode(RGB);
 
