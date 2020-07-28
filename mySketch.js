@@ -156,7 +156,7 @@ function setup() {
 	tsize = playWidth / 4;
 
 	//historygram = createGraphics(width/4,maxFreq-minFreq);
-	historygram = createGraphics(width / 2, height);
+	historygram = createGraphics(int(width / 2), int(height));
 	historygram.colorMode(HSB);
 
 	//Create Graphics for all the buttons for better performance
