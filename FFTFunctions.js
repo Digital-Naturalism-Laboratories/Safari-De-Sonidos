@@ -1,3 +1,36 @@
+	
+	function drawEqualizer(){
+
+		colorMode(RGB);
+		stroke(0);
+strokeWeight(3*width/1920);
+		fill(255, 255, 0, 150);
+
+
+beginShape();
+curveVertex(width * 1/3, height*5/8);
+for (let i = minFreq; i < maxFreq; i += 8*parseInt(freqstep)) { //make our computations easier by skipping!
+				let index = i - minFreq;
+
+	let y = (1 - spectrum[index] / 255) * width * (1-1080/1920);
+	let x = (i - minFreq) / (maxFreq - minFreq - 1) * height;
+	curveVertex(width - x, height - y);
+}
+curveVertex(width * 2/3, height*5/8);
+
+textAlign(RIGHT);
+			textSize(30*width/1920);
+//	noStroke();
+
+//text("ALTA Frecuencia \n(5,000Hz)", width-20, 40);
+//		 		text("BAJA Frecuencia\n(100Hz)", width-20, height-80);
+
+		 textAlign(CENTER);
+
+endShape(CLOSE);
+
+	}
+	
 	//Draw the spectra all big
 	function drawSpectra() {
 

@@ -233,6 +233,7 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 	}
 	if (state == STATES.STARTSCREEN) {
 
+		drawEqualizer();
 		image(titleImg, 0, 0, width, height);
 
 
