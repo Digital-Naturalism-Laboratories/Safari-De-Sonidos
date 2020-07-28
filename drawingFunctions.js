@@ -39,7 +39,8 @@ function drawScore(index) {
 
 	}
 	colorMode(RGB);
-stroke(0,156,221);
+	noStroke();
+fill(0,156,221);
 	text("RONDA: " + (currentRound + 1), width / 6, height / 4);
 	textSize(scoresize * 3);
 
