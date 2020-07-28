@@ -143,7 +143,7 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 
 */
 
-text("WIDTH "+historygram.width+"   height "+historygram.height, width/2, 20);
+//text("WIDTH "+historygram.width+"   height "+historygram.height, width/2, 20);
 
 
 	}
