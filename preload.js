@@ -27,6 +27,18 @@ juegaYabutton = loadImage("UIimg/juega-ya-button-Espectrograma-1920x1080_info2.p
 
 	//tunfrogimg = loadImage("animals/tunfrog.png");
 
+	//Create Graphics for all the buttons for better performance
+
+startButttint = createGraphics(width,height);
+jeugayaButtTint = createGraphics(width,height);
+frogButtTint  = createGraphics(width,height);
+playsoundButt = createGraphics(width,height);
+
+startButttint.tint(200, 255, 0); //
+jeugayaButtTint.tint(200, 255, 0);
+frogButtTint.tint(200, 255, 0);
+playsoundButt.tint(200, 255, 0);
+
 
 	startButttint.image(startButton,0,0,width,height);
 frogButtTint.image(frogButt, 0, 0, width, height);
