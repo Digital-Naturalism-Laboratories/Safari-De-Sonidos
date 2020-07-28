@@ -31,7 +31,7 @@ juegaYabutton = loadImage("UIimg/juega-ya-button-Espectrograma-1920x1080_info2.p
 
 playSoundButt = loadImage("UIimg/playButt.png");
 
-quizBackgroundPanelLeft = loadImage("left-bar-background.png");
+quizBackgroundPanelLeft = loadImage("UIimg/left-bar-background.png");
 
 	//tunfrogimg = loadImage("animals/tunfrog.png");
 
