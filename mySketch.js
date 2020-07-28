@@ -347,7 +347,7 @@ function draw() {
 
 
 		pop();
-		
+
 		image(playSoundButt, 0, 0, width, height);
 
 		//PLAY BUTTON
@@ -368,12 +368,13 @@ function draw() {
 			if (currentRound < quizRounds - 1) {
 			
 			
+				//next round button
 				if (mouseX > width / 12 && mouseY > height * 2 / 3 && mouseY < height * 5 / 6 && mouseX < width / 4) {
 			
 					image(nextRoundButtTint, 0, 0, width, height);
 					} else {
 					
-							image(nextRoundButton, 0, 0, width, height);
+					image(nextRoundButton, 0, 0, width, height);
 					}
 		
 
