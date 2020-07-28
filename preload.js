@@ -9,7 +9,7 @@ let playSoundButt;
 let quizBackgroundPanelLeft;
 let roundsDots;
 
-
+let newRoundButt;
 
 //Preload all files
 function preload() {
@@ -39,6 +39,8 @@ quizBackgroundPanelLeft = loadImage("UIimg/left-bar-background.png");
 roundsDots = loadImage("UIimg/rounds-dots.png");
 
 nextRoundButton = loadImage("UIimg/next-round-button.png"); 
+
+newRoundButt = loadImage("UIimg/new-round.png");
 
 	//tunfrogimg = loadImage("animals/tunfrog.png");
 

@@ -366,24 +366,32 @@ function draw() {
 
 		if (enableNextRound == true) {
 
-			if (mouseX > width / 12 && mouseY > height * 1 / 3 && mouseY < height * 2 / 3 && mouseX < width / 4) {
-				image(nextRoundButton, 0, 0, width, height);
-			} else {
-				image(nextRoundButton, 0, 0, width, height);
-			}
-
-			textSize(40 * width / 1920);
-
 			if (currentRound < quizRounds - 1) {
-				text("¡Siguiente ronda!", 0, playWidth / 2 + 160 * width / 1920);
+			
+			
+				if (mouseX > width / 12 && mouseY > height * 1 / 3 && mouseY < height * 2 / 3 && mouseX < width / 4) {
+			
+					image(nextRoundButtTint, 0, 0, width, height);
+					} else {
+					
+							image(nextRoundButton, 0, 0, width, height);
+					}
+		
 
 			} else {
-				fill(255, 10, 255, 150);
-				textSize(30 * width / 1920);
+			
+				image(newRoundButton, 0, 0, width, height);
 
-				text("Intenta nuevamente?", 0, playWidth / 2 + 160 * width / 1920);
+				//	fill(255, 10, 255, 150);
+			//	textSize(30 * width / 1920);
+
+			//	text("Intenta nuevamente?", 0, playWidth / 2 + 160 * width / 1920);
 
 			}
+			
+			//textSize(40 * width / 1920);
+
+		
 		}
 
 		//drawPlayButton();
