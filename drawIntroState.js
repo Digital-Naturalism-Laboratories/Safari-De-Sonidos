@@ -53,13 +53,16 @@ function drawIntro() {
 			push();
 			colorMode(RGB);
 			tint(0,240, 0,100); // Tint blue and set transparency
+			image(jeugayaButtTint, 0, 0, width, height);
+
 		} else {
 			//fill(soundcolor);
+			image(juegaYabutton, 0, 0, width, height);
+
 			
 		}
 	
 	//	image(tunfrogimg, width / 2 - tunwidth/2, height / 2 - tunheight/2, tunwidth, tunheight);
-	image(juegaYabutton, 0, 0, width, height);
 		pop();
 		//rect(bbox.x - 20, bbox.y, bbox.w + 30, bbox.h + 20, rectCorners);
 		//	fill(100,200,255,150);
@@ -102,7 +105,7 @@ let tunwidth=300*width/1920;
 	//image(infoFrog, 0, 0, width, height);
 
 	}
-	else{image(frogButtTint, 0, 0, width, height);}
+	else{image(frogButt, 0, 0, width, height);}
 	
 
 	//		textSize(30*width/1920);
