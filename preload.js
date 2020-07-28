@@ -38,7 +38,7 @@ quizBackgroundPanelLeft = loadImage("UIimg/left-bar-background.png");
 
 roundsDots = loadImage("UIimg/rounds-dots.png");
 
-nextRoundButt = loadImage("UIimg/next-round-button.png"); 
+nextRoundButton = loadImage("UIimg/next-round-button.png"); 
 
 	//tunfrogimg = loadImage("animals/tunfrog.png");
 
