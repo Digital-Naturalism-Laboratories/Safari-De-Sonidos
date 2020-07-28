@@ -6,6 +6,8 @@ let juegaYabutton;
 
 let playSoundButt;
 
+let quizBackgroundPanelLeft;
+
 //Preload all files
 function preload() {
 
@@ -26,6 +28,10 @@ function preload() {
 	infoBlue = loadImage("UIimg/blue-zone-50per-Espectrograma-1920x1080.png");
 
 juegaYabutton = loadImage("UIimg/juega-ya-button-Espectrograma-1920x1080_info2.png");
+
+playSoundButt = loadImage("UIimg/playButt.png");
+
+quizBackgroundPanelLeft = loadImage("left-bar-background.png");
 
 	//tunfrogimg = loadImage("animals/tunfrog.png");
 
