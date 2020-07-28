@@ -416,7 +416,7 @@ function windowResized() {
 	//historygram = createGraphics(width/4,maxFreq-minFreq);
 	//historygram = createGraphics(width / 2, height);
 	historygram.width=width/2;
-	historygram.height=height;
+	historygram.height=width/1920*1080;
 	
 	//keyHeight = width / 1920 * 100;
 
