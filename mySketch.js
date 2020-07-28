@@ -427,6 +427,31 @@ function windowResized() {
 	//historygram.height=int(height);
 	//keyHeight = width / 1920 * 100;
 
+
+	//Resize all the images
+	startButttint.resizeCanvas(width, height);
+	jeugayaButtTint.resizeCanvas(width, height);
+	frogButtTint.resizeCanvas(width, height);
+	playsoundButtTint.resizeCanvas(width, height);
+
+	nextRoundButtTint.resizeCanvas(width, height);
+
+	startButttint.tint(200, 255, 0); //
+	jeugayaButtTint.tint(200, 255, 0);
+	frogButtTint.tint(200, 255, 0);
+	playsoundButtTint.tint(200, 255, 0);
+	nextRoundButtTint.tint(200, 255, 0);
+
+	startButttint.image(startButton, 0, 0, width, height);
+	frogButtTint.image(frogButt, 0, 0, width, height);
+	jeugayaButtTint.image(juegaYabutton, 0, 0, width, height);
+
+	playsoundButtTint.image(playSoundButt, 0, 0, width, height);
+
+	nextRoundButtTint.image(nextRoundButton, 0, 0, width, height);
+
+
+
 }
 
 
