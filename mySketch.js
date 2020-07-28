@@ -400,96 +400,6 @@ function draw() {
 
 
 
-
-
-	if (state == STATES.RECORDING) {
-		//CALCULATE AVERAGE NOISE FROM MICROPHONE
-		if (state == STATES.CALIBRATING) {
-			calibrateSum.push(spectrum.slice());
-			for (let i = 0; i < spectrum.length; i++) {
-				let index = i - minFreq;
-				let sum = 0;
-				for (let j = 0; j < calibrateSum.length; j++) {
-					sum += calibrateSum[j][i] * 1.1;
-				}
-				averageSpectrum[index] = sum / calibrateSum.length;
-			}
-		}
-
-		var freqstep = spectrum.length / height;
-		//	print(spectrum.length);
-
-		//DRAW MIC SPECTRUM
-		stroke(0);
-		fill(255, 255, 0, 150);
-		beginShape();
-		vertex(width * 3 / 4, height);
-		for (let i = 0; i < spectrum.length; i += parseInt(freqstep)) {
-			let x = (1 - spectrum[i] / 255) * width * 1 / 4;
-			let y = i / parseInt(freqstep);
-			vertex(width - x, height - y);
-		}
-		vertex(width * 3 / 4, 0);
-
-		endShape(CLOSE);
-
-
-
-		//DRAW AVERAGE SPECTRUM
-		stroke(0);
-		fill(0, 150);
-		beginShape();
-		vertex(width * 3 / 4, height);
-
-		for (let i = 0; i < spectrum.length; i += parseInt(freqstep) * 10) {
-			let index = i - minFreq;
-			let x = (1 - averageSpectrum[index] / 255) * width / 4;
-
-			let y = i / parseInt(freqstep);
-			//let y = index / (height - 1) * width / 2;
-			vertex(width - x, height - y);
-		}
-		vertex(width * 3 / 4, 0);
-		endShape(CLOSE);
-
-
-
-		//DRAW HISTORYGRAM 0
-		let hOffset = 1;
-		historygram.image(historygram, -hOffset, 0);
-		for (let i = spectrum.length; i >= 0; i -= parseInt(freqstep)) {
-			let index = i - minFreq;
-			//	let index= i;//(i - minFreq) / (maxFreq - minFreq - 1) * height;
-			let intensity = (spectrum[i] - averageSpectrum[index]);
-			//var hue = intensity;
-			var hue = 240 - map(intensity, 0, 255, 0, 360);
-			historygram.stroke(hue, 255, intensity);
-			//fill(hue,255,255);
-
-
-
-			//		historygram.stroke(255-intensity,255-intensity/2,intensity);
-			//historygram.fill(255-intensity,255-intensity/2,intensity,intensity);	
-			let y = i / parseInt(freqstep);
-
-			//Kid Mode
-			//	historygram.circle(historygram.width-1,height- y, intensity/10);
-			//historygram.strokeWeight(4);
-			//High Resolution Mode
-			historygram.point(historygram.width - hOffset, height - y);
-			//historygram.line(historygram.width-hOffset,height- y, historygram.width,height- y);
-
-
-		}
-		//fill(255);
-		fill(0);
-		image(historygram, 0, 0, width * 3 / 4, height);
-
-
-
-
-
-	}
 }
 
 
@@ -504,8 +414,11 @@ function windowResized() {
 	tsize = playWidth / 4;
 
 	//historygram = createGraphics(width/4,maxFreq-minFreq);
-	historygram = createGraphics(width / 2, height);
-	keyHeight = width / 1920 * 100;
+	//historygram = createGraphics(width / 2, height);
+	historygram.width=width/2;
+	historygram.height=height;
+	
+	//keyHeight = width / 1920 * 100;
 
 }
 
