@@ -48,7 +48,7 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 
 		//Show Live Spectrogram Below
 	//	var freqstep = spectrum.length / height;
-		var freqstep= (maxFreq-minFreq-1)/height;
+		var freqstep= int((maxFreq-minFreq-1)/height);
 		//print(spectrum.length);
 
 				//DRAW HISTOGRAM 0
