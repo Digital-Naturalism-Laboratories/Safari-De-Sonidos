@@ -61,7 +61,6 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 
 			historygram.rect(historygram.width - hOffset, 0, historygram.width, height);
 
-			text("WIDTH "+historygram.width+"   height "+historygram.height, width/2, height/2);
 
 				for (let i = minFreq; i < maxFreq; i += 1*parseInt(freqstep)) { //make our computations easier by skipping!
 					
@@ -144,6 +143,7 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 
 */
 
+text("WIDTH "+historygram.width+"   height "+historygram.height, 20, 20);
 
 
 	}
