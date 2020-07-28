@@ -420,8 +420,10 @@ function windowResized() {
 	//historygram.height=int(height);
 	//historygram.size(int(width / 2), int(height));
 
+	historygram.canvas.remove();
 	var newHist = createGraphics(int(width / 2), int(height));
 	historygram=newHist;
+
 	//keyHeight = width / 1920 * 100;
 
 }
