@@ -416,11 +416,12 @@ function windowResized() {
 	//historygram = createGraphics(width/4,maxFreq-minFreq);
 	//historygram =  createGraphics(int(width / 2), int(height));
 
-	historygram.width=int(width/2);
-	historygram.height=int(height);
-	historygram.size(int(width / 2), int(height));
+	//historygram.width=int(width/2);
+	//historygram.height=int(height);
+	//historygram.size(int(width / 2), int(height));
 
-	
+	var newHist = createGraphics(int(width / 2), int(height));
+	historygram=newHist;
 	//keyHeight = width / 1920 * 100;
 
 }
