@@ -419,11 +419,12 @@ function windowResized() {
 
 	//historygram.size(int(width / 2), int(height));
 
-	historygram.canvas.remove();
+	historygram.resizeCanvas(int(width / 2), int(height))
+	//historygram.canvas.remove();
 	//var newHist = createGraphics(int(width / 2), int(height));
 	//historygram=newHist;
-	historygram.width=int(width/2);
-	historygram.height=int(height);
+	//historygram.width=int(width/2);
+	//historygram.height=int(height);
 	//keyHeight = width / 1920 * 100;
 
 }
