@@ -344,7 +344,17 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 
 		pop();
 
-		drawPlayButton();
+		if (mouseX > width/12 && mouseY > height * 1 / 3 && mouseY < height*2/3&&mouseX<width/4) {
+			//tint(200, 255, 0); //
+			image(playsoundButtTint,0,0,width,height);
+
+		} else {
+			image(playSoundButt,0,0,width,height);
+
+			//noTint();
+		}
+
+		//drawPlayButton();
 
 	}
 
