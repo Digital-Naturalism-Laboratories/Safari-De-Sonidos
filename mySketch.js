@@ -301,9 +301,6 @@ function draw() {
 		fill(10, 100);
 		stroke(100, 150);
 
-		//	strokegrows++;
-		//strokeWeight(strokegrows% 9);
-		//strokeWeight( random(1, 3));
 
 
 		if (chosen == false) {
@@ -350,6 +347,8 @@ function draw() {
 
 
 		pop();
+		
+		image(playSoundButt, 0, 0, width, height);
 
 		//PLAY BUTTON
 		if (mouseX > width / 12 && mouseY > height * 1 / 3 && mouseY < height * 2 / 3 && mouseX < width / 4) {
