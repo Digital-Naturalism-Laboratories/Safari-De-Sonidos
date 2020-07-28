@@ -54,14 +54,19 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 				//DRAW HISTOGRAM 0
 				let hOffset = 6;
 				historygram.image(historygram, -hOffset, 0);
+
+				//make background color of histogram
+			historygram.fill(189,63,88);
+			historygram.stroke(189,63,88);
+			//historygram.line(historygram.width - hOffset, height - y, historygram.width, height - y);
+
+			historygram.rect(historygram.width - hOffset, 0, historygram.width, height);
+
 				for (let i = minFreq; i < maxFreq; i += 1*parseInt(freqstep)) { //make our computations easier by skipping!
 					
 		
 					colorMode(HSB);
-						//make background color of histogram
-			historygram.fill(189,63,88);
-		
-			//historygram.rect(historygram.width - hOffset, 0, historygram.width, height);
+						
 		
 		
 					
