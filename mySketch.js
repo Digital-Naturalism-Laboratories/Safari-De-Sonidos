@@ -282,6 +282,10 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 
 	// The Quiz Game!
 	if (state == STATES.QUIZ) {
+
+image(quizBackgroundPanelLeft,0,0,width,height);
+
+
 		//Draw a selection of the Questions
 		qwidth = width / 2;
 		imgwidth = qwidth / 2;
