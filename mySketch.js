@@ -369,7 +369,7 @@ function draw() {
 			if (currentRound < quizRounds - 1) {
 			
 			
-				if (mouseX > width / 12 && mouseY > height * 1 / 3 && mouseY < height * 2 / 3 && mouseX < width / 4) {
+				if (mouseX > width / 12 && mouseY > height * 2 / 3 && mouseY < height * 5 / 6 && mouseX < width / 4) {
 			
 					image(nextRoundButtTint, 0, 0, width, height);
 					} else {

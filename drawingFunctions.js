@@ -2,18 +2,22 @@
 	var labelsize;
 
 	function drawScore(index) {
-textAlign(CENTER,CENTER);
-		//	stroke(250, 200, 200, 200);
-		strokeWeight(8 * width / 1920);
-		colorMode(HSB);
-		soundcolor = color(fft.getEnergy(100, 3000), 30 + fft.getEnergy(100, 3000), 200, .5);
-		stroke(soundcolor);
 
-		//display score
-		let scoredotsize = width / 4 / quizRounds - 5* width / 1920;
-		let score = 0;
-		scoresize = 20 * width / 1920
-		textSize(scoresize*2);
+image(roundsDots,0,0,width,height);
+
+
+// textAlign(CENTER,CENTER);
+// 		//	stroke(250, 200, 200, 200);
+// 		strokeWeight(8 * width / 1920);
+// 		colorMode(HSB);
+// 		soundcolor = color(fft.getEnergy(100, 3000), 30 + fft.getEnergy(100, 3000), 200, .5);
+// 		stroke(soundcolor);
+
+// 		//display score
+// 		let scoredotsize = width / 4 / quizRounds - 5* width / 1920;
+// 		let score = 0;
+// 		scoresize = 20 * width / 1920
+// 		textSize(scoresize*2);
 		for (let i = 0; i < quizRounds; i++) {
 
 			push();
@@ -39,7 +43,7 @@ textAlign(CENTER,CENTER);
 
 		}
 		
-						text("Ronda: " + (currentRound + 1), width / 8, scoresize*1.1);
+						text("RONDA: " + (currentRound + 1), width / 8, scoresize*1.1);
 		textSize(scoresize*3);
 
 		text("Puntuación: " + score, width / 8, 2*scoredotsize);
@@ -188,11 +192,10 @@ labelsize = 40 * width / 1920;
 				fill(0, 255, 255, .9);
 
 				strokeWeight(8 * width / 1920);
-image(playsoundButtTint,0,0,width,height);
 
 			} else {
 				fill(0, 255, 255, .4);
-				image(playSoundButt,0,0,width,height);
+				//image(playSoundButt,0,0,width,height);
 
 				strokeWeight(3 * width / 1920);
 			}
