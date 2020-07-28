@@ -157,7 +157,22 @@ function setup() {
 	historygram = createGraphics(width / 2, height);
 	historygram.colorMode(HSB);
 
+	//Create Graphics for all the buttons for better performance
 
+	startButttint = createGraphics(width,height);
+	jeugayaButtTint = createGraphics(width,height);
+	frogButtTint  = createGraphics(width,height);
+	playsoundButt = createGraphics(width,height);
+	
+	startButttint.tint(200, 255, 0); //
+	jeugayaButtTint.tint(200, 255, 0);
+	frogButtTint.tint(200, 255, 0);
+	playsoundButt.tint(200, 255, 0);
+	
+	
+		startButttint.image(startButton,0,0,width,height);
+	frogButtTint.image(frogButt, 0, 0, width, height);
+	jeugayaButtTint.image(juegaYabutton,0,0,width,height);
 
 //playsoundButt.image
 
