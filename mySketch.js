@@ -43,7 +43,7 @@ UI images
 let titleImg;
 let startButton;
 
-let infoImg=[]
+let infoImg = []
 
 
 
@@ -136,13 +136,13 @@ let padding = 4; // 4 pixels of padding
 let enableNextRound = false;
 
 let startButttint, jeugayaButtTint, frogButtTint, playsoundButtTint;
-
+let nextRoundButt, nextRoundButtTint;
 
 
 function setup() {
-		//let cnv = createCanvas(windowWidth, windowHeight);
+	//let cnv = createCanvas(windowWidth, windowHeight);
 	//Lock the aspect ratio - 850 by 1920
-  let cnv = createCanvas(windowWidth*.90, windowWidth*.9*1080/1920);
+	let cnv = createCanvas(windowWidth * .90, windowWidth * .9 * 1080 / 1920);
 	//cnv.mouseClicked(togglePlay);
 	let textString = 'Iniciar!';
 	bbox = font.textBounds(textString, width / 2, height - 80, 60);
@@ -161,26 +161,26 @@ function setup() {
 
 	//Create Graphics for all the buttons for better performance
 
-	startButttint = createGraphics(width,height);
-	jeugayaButtTint = createGraphics(width,height);
-	frogButtTint  = createGraphics(width,height);
-	playsoundButtTint = createGraphics(width,height);
-	
-	nextRoundButtTint  = createGraphics(width,height);
+	startButttint = createGraphics(width, height);
+	jeugayaButtTint = createGraphics(width, height);
+	frogButtTint = createGraphics(width, height);
+	playsoundButtTint = createGraphics(width, height);
+
+	nextRoundButtTint = createGraphics(width, height);
 
 	startButttint.tint(200, 255, 0); //
 	jeugayaButtTint.tint(200, 255, 0);
 	frogButtTint.tint(200, 255, 0);
 	playsoundButtTint.tint(200, 255, 0);
 	nextRoundButtTint.tint(200, 255, 0);
-	
-		startButttint.image(startButton,0,0,width,height);
+
+	startButttint.image(startButton, 0, 0, width, height);
 	frogButtTint.image(frogButt, 0, 0, width, height);
-	jeugayaButtTint.image(juegaYabutton,0,0,width,height);
+	jeugayaButtTint.image(juegaYabutton, 0, 0, width, height);
 
-	playsoundButtTint.image(playSoundButt,0,0,width,height);
+	playsoundButtTint.image(playSoundButt, 0, 0, width, height);
 
-	nextRoundButtTint.image(nextRoundButt,0,0,width,height);
+	nextRoundButtTint.image(nextRoundButt, 0, 0, width, height);
 
 
 
@@ -230,11 +230,11 @@ Main Loop
 
 function draw() {
 	background(255);
-if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
+	if (width < 1920 / 3 && state == STATES.QUIZ) {//only do FFT for larger screens
 
-}
-	else{
-			spectrum = fft.analyze();
+	}
+	else {
+		spectrum = fft.analyze();
 	}
 	if (state == STATES.STARTSCREEN) {
 
@@ -249,25 +249,25 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 		//if (mouseX > width / 2 - 40 && mouseY > height / 2 - 40 - 25 && mouseY < height / 2 + 40 + 25) { 
 		if (mouseX < width * .8 && mouseX > width * .2 && mouseY > height / 2 - 100 && mouseY < height / 2 + 300) { //make it bigger since we just want people to click
 			//fill(155, 150);
-			
-			image(startButttint,0,0,width,height);
+
+			image(startButttint, 0, 0, width, height);
 		} else {
-		
+
 			//fill(255, 150);
 			image(startButton, 0, 0, width, height);
 
 		}
 
-		
-	
 
-	
-			textSize(50*width/1920);
-	//	ellipse(width / 2, height / 2 + 260*width/1920, 220*width/1920, 120*width/1920);
-	//text("INICIAR", width / 2, height / 2 + 260*width/1920);
-	//	fill(100);
-	//	strokeWeight(1);
-	//	text("(antes de iniciar, enciende tu micrófono o reproduce música)", width / 2, height / 2 + 380*width/1920);
+
+
+
+		textSize(50 * width / 1920);
+		//	ellipse(width / 2, height / 2 + 260*width/1920, 220*width/1920, 120*width/1920);
+		//text("INICIAR", width / 2, height / 2 + 260*width/1920);
+		//	fill(100);
+		//	strokeWeight(1);
+		//	text("(antes de iniciar, enciende tu micrófono o reproduce música)", width / 2, height / 2 + 380*width/1920);
 
 
 	}
@@ -286,7 +286,7 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 	// The Quiz Game!
 	if (state == STATES.QUIZ) {
 
-image(quizBackgroundPanelLeft,0,0,width,height);
+		image(quizBackgroundPanelLeft, 0, 0, width, height);
 
 
 		//Draw a selection of the Questions
@@ -315,7 +315,7 @@ image(quizBackgroundPanelLeft,0,0,width,height);
 		//draw all the questions selected
 
 		push();
-		textSize(50*width/1920);
+		textSize(50 * width / 1920);
 
 		translate(width - qwidth, 0);
 		//First Question
@@ -352,12 +352,12 @@ image(quizBackgroundPanelLeft,0,0,width,height);
 		pop();
 
 		//PLAY BUTTON
-		if (mouseX > width/12 && mouseY > height * 1 / 3 && mouseY < height*2/3&&mouseX<width/4) {
+		if (mouseX > width / 12 && mouseY > height * 1 / 3 && mouseY < height * 2 / 3 && mouseX < width / 4) {
 			//tint(200, 255, 0); //
-			image(playsoundButtTint,0,0,width,height);
+			image(playsoundButtTint, 0, 0, width, height);
 
 		} else {
-			image(playSoundButt,0,0,width,height);
+			image(playSoundButt, 0, 0, width, height);
 
 			//noTint();
 		}
@@ -366,10 +366,10 @@ image(quizBackgroundPanelLeft,0,0,width,height);
 
 		if (enableNextRound == true) {
 
-			if (mouseX > width/12 && mouseY > height * 1 / 3 && mouseY < height*2/3&&mouseX<width/4) {
-		image(nextRoundButt,0,0,width,height);
+			if (mouseX > width / 12 && mouseY > height * 1 / 3 && mouseY < height * 2 / 3 && mouseX < width / 4) {
+				image(nextRoundButt, 0, 0, width, height);
 			} else {
-				image(nextRoundButt,0,0,width,height);
+				image(nextRoundButt, 0, 0, width, height);
 			}
 
 			textSize(40 * width / 1920);
@@ -379,7 +379,7 @@ image(quizBackgroundPanelLeft,0,0,width,height);
 
 			} else {
 				fill(255, 10, 255, 150);
-			textSize(30 * width / 1920);
+				textSize(30 * width / 1920);
 
 				text("Intenta nuevamente?", 0, playWidth / 2 + 160 * width / 1920);
 
@@ -486,8 +486,8 @@ image(quizBackgroundPanelLeft,0,0,width,height);
 
 
 function windowResized() {
-  resizeCanvas(windowWidth*.9, windowWidth*.9*1080/1920);
-  setupSoundWords();
+	resizeCanvas(windowWidth * .9, windowWidth * .9 * 1080 / 1920);
+	setupSoundWords();
 
 	//the master Quiz Play Button
 	eX = width / 8;
@@ -497,7 +497,7 @@ function windowResized() {
 
 	//historygram = createGraphics(width/4,maxFreq-minFreq);
 	historygram = createGraphics(width / 2, height);
-		keyHeight = width / 1920 * 100;
+	keyHeight = width / 1920 * 100;
 
 }
 
