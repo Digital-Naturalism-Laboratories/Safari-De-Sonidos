@@ -10,11 +10,25 @@ function drawEqualizer(){
 
 beginShape();
 //curveVertex(width * 1/3, height*2/3);
-for (let i = minFreq; i < maxFreq; i += 64*parseInt(freqstep)) { //make our computations easier by skipping!
+for (let i = minFreq; i < maxFreq; i += 32*parseInt(freqstep)) { //make our computations easier by skipping!
 				let index = i - minFreq;
 
 	let y = (1 - spectrum[index] / 255) * height*2/3;
-	let x = width/3+(i - minFreq) / (maxFreq - minFreq - 1) * width/3;
+	let x = width/2+(i - minFreq) / (maxFreq - minFreq - 1) * width/6;
+	curveVertex( x, y);
+}
+//curveVertex(width * 2/3, height*4/8);
+
+endShape(CLOSE);
+
+//Mirror the reverse
+beginShape();
+//curveVertex(width * 1/3, height*2/3);
+for (let i = minFreq; i < maxFreq; i += 32*parseInt(freqstep)) { //make our computations easier by skipping!
+				let index = i - minFreq;
+
+	let y = (1 - spectrum[index] / 255) * height*2/3;
+	let x = width/2-(i - minFreq) / (maxFreq - minFreq - 1) * width/6;
 	curveVertex( x, y);
 }
 //curveVertex(width * 2/3, height*4/8);
