@@ -418,7 +418,6 @@ function windowResized() {
 	historygram.width=int(width/2);
 	historygram.height=int(width/1920*1080);
 	
-	text("WIDTH "+historygram.width+"   height "+historygram.height, width/2, height/2);
 	//keyHeight = width / 1920 * 100;
 
 }
