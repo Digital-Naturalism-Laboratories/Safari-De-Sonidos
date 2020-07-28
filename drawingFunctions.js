@@ -38,13 +38,14 @@ function drawScore(index) {
 		pop();
 
 	}
-
-	text("RONDA: " + (currentRound + 1), width / 8, height / 3);
+	colorMode(RGB);
+stroke(0,156,221);
+	text("RONDA: " + (currentRound + 1), width / 6, height / 4);
 	textSize(scoresize * 3);
 
 	//text("Puntuación: " + score, width / 8, 2*scoredotsize);
 
-	colorMode(RGB);
+
 
 
 }
