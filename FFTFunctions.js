@@ -22,7 +22,7 @@ let positionLevels= 1525/1920; // Relative position of the bars level
 						//make background color of histogram
 			historygram.fill(189,63,88);
 		
-			historygram.rect(historygram.width - hOffset, 0, historygram.width, height);
+			//historygram.rect(historygram.width - hOffset, 0, historygram.width, height);
 		
 		
 					

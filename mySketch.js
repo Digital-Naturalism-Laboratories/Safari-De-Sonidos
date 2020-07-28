@@ -41,7 +41,7 @@ UI images
 */
 
 let titleImg;
-let titleButton;
+let startButton;
 
 let infoImg=[]
 
@@ -135,7 +135,7 @@ let padding = 4; // 4 pixels of padding
 
 let enableNextRound = false;
 
-let startButt, jeugayaButt, frogButt, playsoundButt;
+let startButttint, jeugayaButtTint, frogButtTint, playsoundButt;
 
 function setup() {
 		//let cnv = createCanvas(windowWidth, windowHeight);
@@ -159,11 +159,20 @@ function setup() {
 
 //Create Graphics for all the buttons for better performance
 
-startButt = createGraphics(width,height);
-jeugayaButt = createGraphics(width,height);
-frogButt  = createGraphics(width,height);
+startButttint = createGraphics(width,height);
+jeugayaButtTint = createGraphics(width,height);
+frogButtTint  = createGraphics(width,height);
 playsoundButt = createGraphics(width,height);
 
+startButttint.tint(200, 255, 0); //
+jeugayaButtTint.tint(200, 255, 0);
+frogButtTint.tint(200, 255, 0);
+playsoundButt.tint(200, 255, 0);
+
+startButttint.image(startButton,0,0,width,height);
+frogButtTint.image(frogButtTint, 0, 0, width, height);
+jeugayaButtTint.image(juegaYabutton,0,0,width,height);
+//playsoundButt.image
 
 
 
@@ -232,16 +241,17 @@ if(width<1920/3&&state==STATES.QUIZ){//only do FFT for larger screens
 		//if (mouseX > width / 2 - 40 && mouseY > height / 2 - 40 - 25 && mouseY < height / 2 + 40 + 25) { 
 		if (mouseX < width * .8 && mouseX > width * .2 && mouseY > height / 2 - 100 && mouseY < height / 2 + 300) { //make it bigger since we just want people to click
 			//fill(155, 150);
-			startButt.tint(200, 255, 0); //
-
+			
+			image(startButttint,0,0,width,height);
 		} else {
-			startButt.noTint();
+		
 			//fill(255, 150);
+			image(startButton, 0, 0, width, height);
+
 		}
 
-		startButt.image(titleButton, 0, 0, width, height);
-		image(startButt,0,0,width,height);
-		noTint();
+		
+	
 
 	
 			textSize(50*width/1920);
