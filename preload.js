@@ -1,4 +1,4 @@
-let frogButtTint;
+let frogButt;
 
 let infoBlue;
 
@@ -19,7 +19,7 @@ function preload() {
 	infoImg.push(loadImage("UIimg/Espectrograma-1920x1080_info2.png"));
 
 
-	frogButtTint = loadImage("UIimg/frog_button_Espectrograma-1920x1080.png");
+	frogButt = loadImage("UIimg/frog_button_Espectrograma-1920x1080.png");
 
 	infoBlue = loadImage("UIimg/blue-zone-50per-Espectrograma-1920x1080.png");
 
@@ -29,7 +29,7 @@ juegaYabutton = loadImage("UIimg/juega-ya-button-Espectrograma-1920x1080_info2.p
 
 
 	startButttint.image(startButton,0,0,width,height);
-frogButtTint.image(frogButtTint, 0, 0, width, height);
+frogButtTint.image(frogButt, 0, 0, width, height);
 jeugayaButtTint.image(juegaYabutton,0,0,width,height);
 
 //Load Sounds
