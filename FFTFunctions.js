@@ -1,22 +1,22 @@
-	
-	function drawEqualizer(){
+
+function drawEqualizer(){
 		var freqstep= (maxFreq-minFreq-1)/height;
 		colorMode(RGB);
 		stroke(0);
-strokeWeight(3*width/1920);
+		strokeWeight(3*width/1920);
 		fill(255, 255, 0, 150);
 
 
 beginShape();
-curveVertex(width * 1/3, height*4/8);
+curveVertex(width * 1/3, height*1/3);
 for (let i = minFreq; i < maxFreq; i += 8*parseInt(freqstep)) { //make our computations easier by skipping!
 				let index = i - minFreq;
 
 	let y = (1 - spectrum[index] / 255) * height/3;
-	let x = (i - minFreq) / (maxFreq - minFreq - 1) * width/2;
+	let x = width/3+(i - minFreq) / (maxFreq - minFreq - 1) * width/3;
 	curveVertex( x, y);
 }
-curveVertex(width * 2/3, height*4/8);
+//curveVertex(width * 2/3, height*4/8);
 
 endShape(CLOSE);
 
@@ -29,8 +29,6 @@ endShape(CLOSE);
 
 
 let positionLevels= 1525/1920; // Relative position of the bars level
-
-
 
 
 		//Show Live Spectrogram Below
