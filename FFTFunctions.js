@@ -8,11 +8,11 @@ function drawEqualizer(){
 
 
 beginShape();
-curveVertex(width * 1/3, height*1/3);
+curveVertex(width * 1/3, height*2/3);
 for (let i = minFreq; i < maxFreq; i += 8*parseInt(freqstep)) { //make our computations easier by skipping!
 				let index = i - minFreq;
 
-	let y = (1 - spectrum[index] / 255) * height/3;
+	let y = (1 - spectrum[index] / 255) * height*2/3;
 	let x = width/3+(i - minFreq) / (maxFreq - minFreq - 1) * width/3;
 	curveVertex( x, y);
 }
