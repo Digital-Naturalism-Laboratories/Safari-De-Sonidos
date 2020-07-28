@@ -1,6 +1,6 @@
 	
 	function drawEqualizer(){
-
+		var freqstep= (maxFreq-minFreq-1)/height;
 		colorMode(RGB);
 		stroke(0);
 strokeWeight(3*width/1920);
@@ -31,6 +31,8 @@ endShape(CLOSE);
 
 	}
 	
+
+
 	//Draw the spectra all big
 	function drawSpectra() {
 
