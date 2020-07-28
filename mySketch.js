@@ -166,11 +166,13 @@ function setup() {
 	frogButtTint  = createGraphics(width,height);
 	playsoundButtTint = createGraphics(width,height);
 	
+	nextRoundButtTint  = createGraphics(width,height);
+
 	startButttint.tint(200, 255, 0); //
 	jeugayaButtTint.tint(200, 255, 0);
 	frogButtTint.tint(200, 255, 0);
 	playsoundButtTint.tint(200, 255, 0);
-	
+	nextRoundButtTint.tint(200, 255, 0);
 	
 		startButttint.image(startButton,0,0,width,height);
 	frogButtTint.image(frogButt, 0, 0, width, height);
@@ -178,6 +180,7 @@ function setup() {
 
 	playsoundButtTint.image(playSoundButt,0,0,width,height);
 
+	nextRoundButtTint.image(nextRoundButt,0,0,width,height);
 
 
 
@@ -348,6 +351,7 @@ image(quizBackgroundPanelLeft,0,0,width,height);
 
 		pop();
 
+		//PLAY BUTTON
 		if (mouseX > width/12 && mouseY > height * 1 / 3 && mouseY < height*2/3&&mouseX<width/4) {
 			//tint(200, 255, 0); //
 			image(playsoundButtTint,0,0,width,height);
@@ -356,6 +360,30 @@ image(quizBackgroundPanelLeft,0,0,width,height);
 			image(playSoundButt,0,0,width,height);
 
 			//noTint();
+		}
+
+		//NEXT ROUND BUTTON
+
+		if (enableNextRound == true) {
+
+			if (mouseX > width/12 && mouseY > height * 1 / 3 && mouseY < height*2/3&&mouseX<width/4) {
+		image(nextRoundButt,0,0,width,height);
+			} else {
+				image(nextRoundButt,0,0,width,height);
+			}
+
+			textSize(40 * width / 1920);
+
+			if (currentRound < quizRounds - 1) {
+				text("¡Siguiente ronda!", 0, playWidth / 2 + 160 * width / 1920);
+
+			} else {
+				fill(255, 10, 255, 150);
+			textSize(30 * width / 1920);
+
+				text("Intenta nuevamente?", 0, playWidth / 2 + 160 * width / 1920);
+
+			}
 		}
 
 		//drawPlayButton();
