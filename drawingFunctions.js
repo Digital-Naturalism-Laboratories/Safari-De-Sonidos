@@ -112,12 +112,13 @@ function drawQuestions(index) {
 	}
 
 
-	image(chosen3[index].spectrogram, chosen3[index].x - imgwidth, chosen3[index].y, qwidth, imgheight - padding);
-	image(chosen3[index].pic, chosen3[index].x + qwidth - imgwidth, chosen3[index].y, imgwidth, imgheight - padding);
+	//image(chosen3[index].spectrogram, chosen3[index].x - imgwidth, chosen3[index].y, qwidth, imgheight - padding);
+	image(chosen3[index].quizQuestion,0,0,width,height);
+	//image(chosen3[index].pic, chosen3[index].x + qwidth - imgwidth, chosen3[index].y, imgwidth, imgheight - padding);
 	//ellipse(chosen3[index].x, chosen3[index].y, 80, 80);
 
-	textSize(labelsize);
-	text(chosen3[index].name, chosen3[index].x, chosen3[index].y + 70 * width / 1920);
+	//textSize(labelsize);
+	//text(chosen3[index].name, chosen3[index].x, chosen3[index].y + 70 * width / 1920);
 
 	if (chosen3[index].clicked == true) {
 
@@ -125,14 +126,16 @@ function drawQuestions(index) {
 		//click RIGHT
 		if (chosen3[index].correct) {
 
-			textSize(labelsize * 2);
-			text("¡Muy Bien!", chosen3[index].x, chosen3[index].y + 170 * width / 1920);
+			//textSize(labelsize * 2);
+			//text("¡Muy Bien!", chosen3[index].x, chosen3[index].y + 170 * width / 1920);
+			image(correctButton,0,0,width,height);
 		}
 		//Click WRONG
 		if (!chosen3[index].correct) {
+			image(incorrectButton,0,0,width,height);
 
-			textSize(labelsize * 2);
-			text("Incorrecta", chosen3[index].x, chosen3[index].y + 170 * width / 1920);
+			//textSize(labelsize * 2);
+			//text("Incorrecta", chosen3[index].x, chosen3[index].y + 170 * width / 1920);
 		}
 	}
 

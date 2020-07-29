@@ -314,11 +314,12 @@ function draw() {
 		push();
 		textSize(50 * width / 1920);
 
-		translate(width - qwidth, 0);
+		//translate(width - qwidth, 0);
 		//First Question
 		if (mouseX > width - qwidth - imgwidth && mouseY > 0 && mouseY < height / 3) {
 			tint(200, 255, 0); //
-		}
+		} else noTint();
+
 
 		drawQuestions(0);
 

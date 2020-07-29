@@ -10,6 +10,7 @@ let quizBackgroundPanelLeft;
 let roundsDots;
 
 let newRoundButt;
+let correctButton,incorrectButton;
 
 //Preload all files
 function preload() {
@@ -41,6 +42,10 @@ function preload() {
 	nextRoundButton = loadImage("UIimg/next-round-button.png");
 
 	newRoundButt = loadImage("UIimg/new-round.png");
+
+	correctButton = loadImage("UIimg/correctButt.png");
+	incorrectButton = loadImage("UIimg/incorrectButt.png");
+
 
 	//tunfrogimg = loadImage("animals/tunfrog.png");
 
