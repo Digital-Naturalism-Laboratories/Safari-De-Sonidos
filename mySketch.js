@@ -142,7 +142,7 @@ let nextRoundButton, nextRoundButtTint;
 function setup() {
 	//let cnv = createCanvas(windowWidth, windowHeight);
 	//Lock the aspect ratio - 850 by 1920
-	let cnv = createCanvas(windowWidth * .90, windowWidth * .9 * 1080 / 1920);
+	let cnv = createCanvas(windowWidth * .95, windowWidth * .95 * 1080 / 1920);
 	//cnv.mouseClicked(togglePlay);
 	let textString = 'Iniciar!';
 	bbox = font.textBounds(textString, width / 2, height - 80, 60);
