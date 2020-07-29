@@ -103,7 +103,7 @@ let recordedSequence = [];
 
 let sounds = [];
 let pics = [];
-let specs = [];
+let quizQuestion = [];
 let Questions = [];
 let chosen3 = [];
 let chosen = false;
