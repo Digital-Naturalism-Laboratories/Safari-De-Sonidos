@@ -241,7 +241,7 @@ function drawPlayButton() {
 
 
 
-function funcQuestions(x, y, spectrogram, pic, index) {
+function funcQuestions(x, y, spectrogram,  index) {
 	this.x = x;
 	this.y = y;
 
