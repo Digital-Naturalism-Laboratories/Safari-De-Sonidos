@@ -17,7 +17,7 @@ for (let i = minFreq; i < maxFreq; i += 64*parseInt(freqstep)) { //make our comp
 	let x = width*6/12+width/40+(i-64*parseInt(freqstep) - minFreq) / (maxFreq - minFreq - 1) * width/3;
 	curveVertex( x, y);
 }
-vertex(width * 2/3, height*2/3);
+vertex(width*6/12+width/40+(maxFreq-64*parseInt(freqstep) - minFreq) / (maxFreq - minFreq - 1) * width/3, height*2/3);
 
 endShape(CLOSE);
 
@@ -31,7 +31,7 @@ for (let i = minFreq; i < maxFreq; i += 64*parseInt(freqstep)) { //make our comp
 	let x = width*6/12+width/40-(i+64*parseInt(freqstep) - minFreq) / (maxFreq - minFreq - 1) * width/3;
 	curveVertex( x, y);
 }
-vertex(width * 2/3, height*2/3);
+vertex(width*6/12+width/40-(maxFreq+64*parseInt(freqstep) - minFreq) / (maxFreq - minFreq - 1) * width/3, height*2/3);
 
 endShape(CLOSE);
 
