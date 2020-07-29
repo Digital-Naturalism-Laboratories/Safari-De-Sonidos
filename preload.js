@@ -11,6 +11,7 @@ let roundsDots;
 
 let newRoundButt;
 let correctButton,incorrectButton;
+let correctRoundDot, incorrectRoundDot;
 
 //Preload all files
 function preload() {
@@ -46,6 +47,9 @@ function preload() {
 	correctButton = loadImage("UIimg/correctButt.png");
 	incorrectButton = loadImage("UIimg/incorrectButt.png");
 
+	correctRoundDot = loadImage("UIimg/correctRoundDot.png");
+
+	incorrectRoundDot = loadImage("UIimg/incorrectRoundDot.png");
 
 	//tunfrogimg = loadImage("animals/tunfrog.png");
 
