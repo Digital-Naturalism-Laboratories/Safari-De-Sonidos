@@ -26,12 +26,12 @@ function drawScore(index) {
 		}
 		if (Rounds[i] == 1) {
 			//fill(100, 255, 200, .7);
-			image(correctRoundDot,i*84/1920,0,width,height)
+			image(correctRoundDot,i*84,0,width,height)
 			score += 100;
 		}
 		if (Rounds[i] == 0) {
 			fill(0, 255, 200, .7);
-			image(incorrectRoundDot,i*84/1920,0,width,height)
+			image(incorrectRoundDot,i*84,0,width,height)
 
 		}
 
