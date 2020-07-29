@@ -113,7 +113,7 @@ function drawQuestions(index) {
 
 
 	//image(chosen3[index].spectrogram, chosen3[index].x - imgwidth, chosen3[index].y, qwidth, imgheight - padding);
-	image(chosen3[index].quizQuestion,0,0,width,height);
+	image(chosen3[index].quizQ,0,0,width,height);
 	//image(chosen3[index].pic, chosen3[index].x + qwidth - imgwidth, chosen3[index].y, imgwidth, imgheight - padding);
 	//ellipse(chosen3[index].x, chosen3[index].y, 80, 80);
 

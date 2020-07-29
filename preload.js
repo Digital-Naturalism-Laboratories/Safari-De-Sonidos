@@ -194,7 +194,7 @@ function reloadQs() {
 		Questions[i] = {
 			x: 10,
 			y: 4,
-			spectrogram: quizQuestion[i],
+			quizQ: quizQuestion[i],
 			pic: pics[i],
 			sound: sounds[i],
 			name: names[i],
