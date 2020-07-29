@@ -64,7 +64,7 @@ function drawSpectrumCircle() {
 		let to = this.color(69, 188, 216, 0.2 * 255); //since this is in a function for some bizarre reason we have to put this.color
 		var color = lerpColor(from, to, amt);
 		//var color = lerpColor(colorA, colorB, amt);
-		var diam = map(spectrum[i], 0, 255, playWidth, playWidth * 1.5);
+		var diam = map(spectrum[i], 0, 255, playWidth, playWidth * 2);
 		noFill();
 		stroke(color);
 		strokeWeight(5);
