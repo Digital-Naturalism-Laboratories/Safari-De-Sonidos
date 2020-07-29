@@ -60,14 +60,14 @@ function drawSpectrumCircle() {
 		var amt = map(i, 0, spectrum.length, 0, 1);
 
 
-		let from = this.color(255, 0, 0, 0.2 * 255);
-		let to = this.color(0, 0, 255, 0.2 * 255); //since this is in a function for some bizarre reason we have to put this
+		let from = this.color(239, 78,18, 0.2 * 255);
+		let to = this.color(69, 188, 216, 0.2 * 255); //since this is in a function for some bizarre reason we have to put this.color
 		var color = lerpColor(from, to, amt);
 		//var color = lerpColor(colorA, colorB, amt);
 		var diam = map(spectrum[i], 0, 255, playWidth, playWidth * 1.5);
 		noFill();
 		stroke(color);
-		strokeWeight(3);
+		strokeWeight(5);
 		ellipseMode(CENTER);
 		ellipse(0, 0, diam, diam);
 	}
@@ -151,9 +151,10 @@ function drawPlayButton() {
 
 
 	//Draw master Quiz Play Button
-	eX = width / 8;
-	eY = height / 2;
-	playWidth = width / 5;
+	eX = 260*width/1920;
+	eY = 550*width/1920
+	;
+	playWidth = 225*width/1920;
 	tsize = playWidth / 4;
 
 	push();
@@ -207,16 +208,16 @@ function drawPlayButton() {
 
 
 
-		rect(-playWidth / 2, playWidth / 2 + 120 * width / 1920, playWidth, 80 * width / 1920, rectCorners);
-		fill(100, 10, 255, 150);
-		textSize(40 * width / 1920);
+		//rect(-playWidth / 2, playWidth / 2 + 120 * width / 1920, playWidth, 80 * width / 1920, rectCorners);
+		//fill(100, 10, 255, 150);
+	//textSize(40 * width / 1920);
 
 		if (currentRound < quizRounds - 1) {
 			//text("¡Siguiente ronda!", 0, playWidth / 2 + 160 * width / 1920);
 
 		} else {
-			fill(255, 10, 255, 150);
-			textSize(30 * width / 1920);
+		//	fill(255, 10, 255, 150);
+		//	textSize(30 * width / 1920);
 
 			//text("Intenta nuevamente?", 0, playWidth / 2 + 160 * width / 1920);
 
