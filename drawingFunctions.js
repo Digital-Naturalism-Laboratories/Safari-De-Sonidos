@@ -151,8 +151,8 @@ function drawPlayButton() {
 
 
 	//Draw master Quiz Play Button
-	eX = 260*width/1920;
-	eY = 550*width/1920
+	eX = 265*width/1920;
+	eY = 555*width/1920
 	;
 	playWidth = 225*width/1920;
 	tsize = playWidth / 4;
