@@ -348,6 +348,7 @@ function draw() {
 
 
 		pop();
+		drawPlayButton();
 
 		image(playSoundButt, 0, 0, width, height);
 
@@ -395,7 +396,6 @@ function draw() {
 		
 		}
 
-		//drawPlayButton();
 
 	}
 

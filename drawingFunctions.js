@@ -212,13 +212,13 @@ function drawPlayButton() {
 		textSize(40 * width / 1920);
 
 		if (currentRound < quizRounds - 1) {
-			text("¡Siguiente ronda!", 0, playWidth / 2 + 160 * width / 1920);
+			//text("¡Siguiente ronda!", 0, playWidth / 2 + 160 * width / 1920);
 
 		} else {
 			fill(255, 10, 255, 150);
 			textSize(30 * width / 1920);
 
-			text("Intenta nuevamente?", 0, playWidth / 2 + 160 * width / 1920);
+			//text("Intenta nuevamente?", 0, playWidth / 2 + 160 * width / 1920);
 
 		}
 	}
