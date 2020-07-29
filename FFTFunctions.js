@@ -19,10 +19,10 @@ for (let i = minFreq; i < maxFreq; i += 64*parseInt(freqstep)) { //make our comp
 }
 //curveVertex(width * 2/3, height*4/8);
 
-//endShape(CLOSE);
+endShape(CLOSE);
 
 //Mirror the reverse
-//beginShape();
+beginShape();
 //curveVertex(width * 1/3, height*2/3);
 for (let i = minFreq; i < maxFreq; i += 64*parseInt(freqstep)) { //make our computations easier by skipping!
 				let index = i - minFreq;
