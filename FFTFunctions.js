@@ -9,7 +9,7 @@ function drawEqualizer(){
 
 
 beginShape();
-curveVertex(width*6/12+width/40, height*2/3);
+vertex(width*6/12+width/40, height*2/3);
 for (let i = minFreq; i < maxFreq; i += 64*parseInt(freqstep)) { //make our computations easier by skipping!
 				let index = i - minFreq;
 
@@ -17,13 +17,13 @@ for (let i = minFreq; i < maxFreq; i += 64*parseInt(freqstep)) { //make our comp
 	let x = width*6/12+width/40+(i-64*parseInt(freqstep) - minFreq) / (maxFreq - minFreq - 1) * width/3;
 	curveVertex( x, y);
 }
-curveVertex(width * 2/3, height*2/3);
+vertex(width * 2/3, height*2/3);
 
 endShape(CLOSE);
 
 //Mirror the reverse
 beginShape();
-curveVertex(width * 1/3, height*2/3);
+vertex(width * 1/3, height*2/3);
 for (let i = minFreq; i < maxFreq; i += 64*parseInt(freqstep)) { //make our computations easier by skipping!
 				let index = i - minFreq;
 
@@ -31,7 +31,7 @@ for (let i = minFreq; i < maxFreq; i += 64*parseInt(freqstep)) { //make our comp
 	let x = width*6/12+width/40-(i+64*parseInt(freqstep) - minFreq) / (maxFreq - minFreq - 1) * width/3;
 	curveVertex( x, y);
 }
-curveVertex(width * 2/3, height*2/3);
+vertex(width * 2/3, height*2/3);
 
 endShape(CLOSE);
 
