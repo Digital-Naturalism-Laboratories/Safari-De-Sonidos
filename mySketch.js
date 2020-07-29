@@ -381,7 +381,7 @@ function draw() {
 
 			} else {
 			
-				image(newRoundButton, 0, 0, width, height);
+				image(newRoundButt, 0, 0, width, height);
 
 				//	fill(255, 10, 255, 150);
 			//	textSize(30 * width / 1920);

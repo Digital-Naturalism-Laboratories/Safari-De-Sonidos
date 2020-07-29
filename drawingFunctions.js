@@ -25,13 +25,13 @@ function drawScore(index) {
 			//fill(255, 0, 255);
 		}
 		if (Rounds[i] == 1) {
-			//fill(100, 255, 200, .7);
-			image(correctRoundDot,i*84*width/1920,0,width,height)
+			//fill(100, 255, 200, .7);//dots are spaced 83 pixels apart
+			image(correctRoundDot,i*83*width/1920,0,width,height)
 			score += 100;
 		}
 		if (Rounds[i] == 0) {
 			fill(0, 255, 200, .7);
-			image(incorrectRoundDot,i*84*width/1920,0,width,height)
+			image(incorrectRoundDot,i*83*width/1920,0,width,height)
 
 		}
 
