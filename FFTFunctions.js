@@ -23,7 +23,7 @@ endShape(CLOSE);
 
 //Mirror the reverse
 beginShape();
-vertex(width*6/12+width/40-(minfreq+64*parseInt(freqstep) - minFreq) / (maxFreq - minFreq - 1) * width/3, height*2/3);
+vertex(width*6/12+width/40-(minFreq+64*parseInt(freqstep) - minFreq) / (maxFreq - minFreq - 1) * width/3, height*2/3);
 for (let i = minFreq; i < maxFreq; i += 64*parseInt(freqstep)) { //make our computations easier by skipping!
 				let index = i - minFreq;
 
