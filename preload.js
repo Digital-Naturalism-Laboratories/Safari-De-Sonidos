@@ -63,7 +63,7 @@ function preload() {
 	//0
 	names.push("Rana túngara (Engystomops pustulosus)");
 	pics.push(loadImage("animals/tunfrog.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/e-pustolosus.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/e-pustolosus.png"));
 	sounds.push(loadSound('animals/tungara 3s.mp3'));
 
 
@@ -71,7 +71,7 @@ function preload() {
 	names.push("Rana arbórea veteada (Trachycephalus typhonius)");
 
 	pics.push(loadImage("animals/typhonius_lucas grandinetti.JPG"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/t-typhonius.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/t-typhonius.png"));
 	sounds.push(loadSound('animals/3s frog_B. typhonius - SET 1.mp3'));
 
 
@@ -81,7 +81,7 @@ function preload() {
 
 	//pics.push(loadImage("gecko_H. frenatus-01 800px-Hemidactylus_frenatus_(Common_House_Gecko)_on_white_background,_focus_stacking Basile Morin.jpg"));
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Hemidactylus_frenatus_%28Common_House_Gecko%29_on_white_background%2C_focus_stacking.jpg/800px-Hemidactylus_frenatus_%28Common_House_Gecko%29_on_white_background%2C_focus_stacking.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/h-frenatus.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/h-frenatus.png"));
 	sounds.push(loadSound('animals/gecko_H. frenatus-01 3s gecko other.mp3'));
 
 	//3
@@ -91,14 +91,14 @@ function preload() {
 
 	//pics.push(loadImage("gecko_T_rapicauda Thecadactylus_rapicauda author DuSantos flickr .jpg"));
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/d/d5/Thecadactylus_rapicauda.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/t-rapicaudus.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/t-rapicaudus.png"));
 	sounds.push(loadSound('animals/gecko_T_rapicauda 2s_gecko_T_rapicauda_96dB.mp3'));
 
 	//4
 	names.push("Rana arbórea (Smilisca sila)");
 
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Simlisca_sila.jpg/800px-Simlisca_sila.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/s-sila.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/s-sila.png"));
 	sounds.push(loadSound('animals/frog sila 3s.mp3'));
 
 
@@ -106,7 +106,7 @@ function preload() {
 	names.push("Rana de campanilla común (Diasporus diastema)");
 
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Common_Dink_Frog_%28Diasporus_diastema%29%3F_%289426830682%29.jpg/800px-Common_Dink_Frog_%28Diasporus_diastema%29%3F_%289426830682%29.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/d-diastema.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/d-diastema.png"));
 	sounds.push(loadSound('animals/frog e diastema 3s.mp3'));
 
 	//6
@@ -114,14 +114,14 @@ function preload() {
 	names.push("Rana moviéndose en hojas");
 
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Panamanian_Golden_Frog_001.jpg/500px-Panamanian_Golden_Frog_001.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/frog-moving-in-leaves.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/frog-moving-in-leaves.png"));
 	sounds.push(loadSound('animals/frog hop in leaves 3s.mp3'));
 
 	//7
 	names.push("Rana amarillenta (Dendropsophus ebraccatus)");
 
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Hourglass_treefrog_%28Dendropsophus_ebraccatus%29.jpg/1280px-Hourglass_treefrog_%28Dendropsophus_ebraccatus%29.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/d-ebracctus.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/d-ebracctus.png"));
 	sounds.push(loadSound('animals/3s frog d ebraccatus.mp3'));
 
 
@@ -129,14 +129,14 @@ function preload() {
 	names.push("Rana de cristal (Hyalinobatrachium fleischmanni)");
 
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/0/05/Hyalinobatrachium_fleischmanni03.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/h-flieschmanni.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/h-flieschmanni.png"));
 	sounds.push(loadSound('animals/3s h fleishmanni.mp3'));
 
 	//9
 	names.push("Sapo gigante (Bufo marinus)");
 
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Bufo_marinus_from_Australia.JPG/1280px-Bufo_marinus_from_Australia.JPG"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/r-marina.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/r-marina.png"));
 	sounds.push(loadSound('animals/3s frog b marinus.mp3'));
 
 
@@ -144,7 +144,7 @@ function preload() {
 	names.push("Cigarra esmeralda (Zammara smaragdina)");
 
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flickr_-_ggallice_-_Emerald_cicada.jpg/800px-Flickr_-_ggallice_-_Emerald_cicada.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/z-smaragdi.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/z-smaragdi.png"));
 	sounds.push(loadSound('animals/cicada zammara.mp3'));
 
 
@@ -153,14 +153,14 @@ function preload() {
 	names.push("Cigarra (Quesada gigas) – llamado principal");
 
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flickr_-_ggallice_-_Emerald_cicada.jpg/800px-Flickr_-_ggallice_-_Emerald_cicada.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/q-gigas.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/q-gigas.png"));
 	sounds.push(loadSound('animals/cicada-Quesada_gigas main call 3s.mp3'));
 
 	//12
 	names.push("Cigarra (Quesada gigas) – inicio de llamado");
 
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flickr_-_ggallice_-_Emerald_cicada.jpg/800px-Flickr_-_ggallice_-_Emerald_cicada.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/q-gigas-intro.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/q-gigas-intro.png"));
 	sounds.push(loadSound('animals/cicada-Quesada_gigas intro 3s.mp3'));
 
 
@@ -168,14 +168,14 @@ function preload() {
 	names.push("Grillo (Aclodes sp)");
 
 	pics.push(loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Costa_Rica_DSCN7019-new_%2830761958390%29.jpg/800px-Costa_Rica_DSCN7019-new_%2830761958390%29.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/Aclodes.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/Aclodes.png"));
 	sounds.push(loadSound('animals/cricket aclodes.mp3'));
 
 	//14
 	names.push("Grillo con alas de oro (Anaxipha exigua)");
 
 	pics.push(loadImage("animals/Golden_Cricket_-_Flickr_-_treegrow_(3) Katja Schulz from Washington D USA.jpg"));
-	quizQuestion.push(loadImage("UIimg/animalIMG/animals/a-exigua.png"));
+	quizQuestion.push(loadImage("UIimg/animalIMG/a-exigua.png"));
 	sounds.push(loadSound('animals/cricket anaxipha mp3.mp3'));
 
 
